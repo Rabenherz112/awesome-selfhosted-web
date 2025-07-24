@@ -32,7 +32,7 @@ jobs:
       - name: Run generator
         run: |
           cd awesome-selfhosted-web-gen
-          python ./generate.py
+          python ./generate.py build
 
       - name: Setup Destination
         run: |
