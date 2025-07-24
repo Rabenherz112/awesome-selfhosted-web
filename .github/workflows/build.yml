@@ -65,6 +65,6 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: awesome-selfhosted-web-gen/output
-          remote-dir: /
+          server-dir: /
           protocol: ftps
           port: 21
