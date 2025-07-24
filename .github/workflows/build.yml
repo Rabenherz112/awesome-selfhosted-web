@@ -17,19 +17,21 @@ jobs:
       - name: Clone Tool repo
         run: |
           git clone https://github.com/Rabenherz112/awesome-selfhosted-web-gen.git
-          cd awesome-selfhosted-web-gen
 
       - name: Clone Awesome Selfhosted data repo
         run: |
+          cd awesome-selfhosted-web-gen
           git clone https://github.com/awesome-selfhosted/awesome-selfhosted-data.git
       
       - name: Install dependencies
         run: |
+          cd awesome-selfhosted-web-gen
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
       - name: Run generator
         run: |
+          cd awesome-selfhosted-web-gen
           python ./generate.py
 
       - name: Setup Destination
@@ -37,13 +39,14 @@ jobs:
           mkdir -p ~/.ssh
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
+          cd awesome-selfhosted-web-gen
           git clone https://github.com/Rabenherz112/awesome-selfhosted-web.git
           rm -rf awesome-selfhosted-web/*
           mv output/* awesome-selfhosted-web
-          cd awesome-selfhosted-web
       
       - name: Push to GitHub
         run: |
+          cd awesome-selfhosted-web-gen/awesome-selfhosted-web
           git remote set-url origin git@github.com:awesome-selfhosted-web
           git config user.name "GitHub Actions"
           git config user.email "<>"
