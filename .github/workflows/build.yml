@@ -42,7 +42,7 @@ jobs:
           cd awesome-selfhosted-web-gen
           git clone https://github.com/Rabenherz112/awesome-selfhosted-web.git
           rm -rf awesome-selfhosted-web/*
-          mv output/* awesome-selfhosted-web
+          cp output/* awesome-selfhosted-web -rf
       
       - name: Push to GitHub
         run: |
