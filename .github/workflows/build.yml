@@ -47,7 +47,7 @@ jobs:
       - name: Push to GitHub
         run: |
           cd awesome-selfhosted-web-gen/awesome-selfhosted-web
-          git remote set-url origin git@github.com:awesome-selfhosted-web
+          git remote set-url origin git@github.com:awesome-selfhosted-web.git
           git config user.name "GitHub Actions"
           git config user.email "<>"
           git add .
