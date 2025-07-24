@@ -51,8 +51,12 @@ jobs:
           git config user.name "GitHub Actions"
           git config user.email "<>"
           git add .
-          git commit -m "Deploy to GitHub Pages"
-          git push -f
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Deploy to GitHub Pages"
+            git push -f
+          fi
 
       - name: Push to Website
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
