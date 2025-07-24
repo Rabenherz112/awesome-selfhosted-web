@@ -1,0 +1,50 @@
+name: build
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.13'
+      
+      - name: Clone Tool repo
+        run: |
+          git clone https://github.com/Rabenherz112/awesome-selfhosted-web-gen.git
+          cd awesome-selfhosted-web-gen
+
+      - name: Clone Awesome Selfhosted data repo
+        run: |
+          git clone https://github.com/awesome-selfhosted/awesome-selfhosted-data.git
+      
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run generator
+        run: |
+          python ./generate.py
+
+      - name: Setup Destination
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          git clone https://github.com/Rabenherz112/awesome-selfhosted-web.git
+          rm -rf awesome-selfhosted-web/*
+          mv output/* awesome-selfhosted-web
+          cd awesome-selfhosted-web
+      
+      - name: Push to GitHub
+        run: |
+          git remote set-url origin git@github.com:awesome-selfhosted-web
+          git config user.name "GitHub Actions"
+          git config user.email "<>"
+          git add .
+          git commit -m "Deploy to GitHub Pages"
+          git push -f
