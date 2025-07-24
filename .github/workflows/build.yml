@@ -53,3 +53,14 @@ jobs:
           git add .
           git commit -m "Deploy to GitHub Pages"
           git push -f
+
+      - name: Push to Website
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: awesome-selfhosted-web-gen/output
+          remote-dir: /
+          protocol: ftps
+          port: 21
