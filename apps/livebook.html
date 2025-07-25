@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Livebook - Self-Hosted Application</title>
+    <title>Livebook - Self-Hosted Application - Awesome Selfhosted</title>
     
     <!-- Meta tags -->
     <meta name="description" content="Discover and explore self-hosted applications">
     <meta name="author" content="Awesome Self-Hosted Community">
+    <meta name="items-per-page" content="24">
     
     <!-- Open Graph tags -->
-    <meta property="og:title" content="Livebook - Self-Hosted Application">
+    <meta property="og:title" content="Livebook - Self-Hosted Application - Awesome Selfhosted">
     <meta property="og:description" content="Discover and explore self-hosted applications">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://awesome-selfhosted.net">
     
     <!-- Twitter Card tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Livebook - Self-Hosted Application">
+    <meta name="twitter:title" content="Livebook - Self-Hosted Application - Awesome Selfhosted">
     <meta name="twitter:description" content="Discover and explore self-hosted applications">
     
     <!-- Tailwind CSS -->
@@ -137,11 +138,15 @@
                     Statistics
                 </a>
                 <!-- Mobile Search -->
-                <div class="px-3 py-2">
+                <div class="px-3 py-2 relative">
                     <input type="text" 
                            id="mobile-search-input" 
                            placeholder="Search applications..." 
                            class="w-full px-4 py-2 text-sm bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent dark:text-white">
+                    <!-- Mobile Search Results Dropdown -->
+                    <div id="mobile-search-results" class="absolute mt-1 w-full bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 hidden z-50 max-h-64 overflow-y-auto">
+                        <!-- Search results will be populated by JavaScript -->
+                    </div>
                 </div>
             </div>
         </div>
@@ -154,7 +159,7 @@
     <div class="flex items-center text-sm text-gray-600 dark:text-gray-400 mb-8">
         <a href="/" class="hover:text-primary-600 dark:hover:text-primary-400">Home</a>
         <span class="mx-2">/</span>
-        <a href="/browse.html" class="hover:text-primary-600 dark:hover:text-primary-400">Browse</a>
+        <a href="/" class="hover:text-primary-600 dark:hover:text-primary-400">Browse</a>
         <span class="mx-2">/</span>
         <span>Livebook</span>
     </div>
@@ -200,9 +205,9 @@
             <p class="text-lg text-gray-700 dark:text-gray-300">Realtime collaborative notebook app based on Markdown that supports running Elixir code snippets, TeX and Mermaid Diagrams. Easily deployed using Docker or Elixir.</p>
         </div>
 
-        <!-- Tags -->
+        <!-- Categories -->
         <div class="mb-6">
-            <h3 class="text-sm font-semibold text-gray-900 dark:text-white uppercase tracking-wider mb-3">Tags</h3>
+            <h3 class="text-sm font-semibold text-gray-900 dark:text-white uppercase tracking-wider mb-3">Categories</h3>
             <div class="flex flex-wrap gap-2">
                 <span class="inline-block bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 text-sm px-3 py-1 rounded-full">Note-taking & Editors</span>
             </div>
@@ -228,7 +233,7 @@
 
             <div>
                 <h4 class="text-sm font-semibold text-gray-900 dark:text-white mb-2">Last Updated</h4>
-                <span class="text-gray-700 dark:text-gray-300">July 17, 2025</span>
+                <span class="text-gray-700 dark:text-gray-300">July 24, 2025</span>
             </div>
 
 
@@ -246,128 +251,50 @@
             <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md transition-shadow duration-200">
                 <div class="flex items-start justify-between mb-3">
                     <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                        <a href="/apps/joplin.html" class="hover:text-primary-600 dark:hover:text-primary-400">
-                            Joplin
+                        <a href="/apps/firezone.html" class="hover:text-primary-600 dark:hover:text-primary-400">
+                            Firezone
                         </a>
                     </h3>
                     <div class="flex items-center text-yellow-500">
                         <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                         </svg>
-                        <span class="text-sm">50.4k</span>
+                        <span class="text-sm">7.4k</span>
                     </div>
                 </div>
                 
                 <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">
-                    Note taking application with markdown editor and encryption support for mobile and desktop...
+                    Secure remote access gateway that supports the WireGuard protocol. It offers a Web GUI, 1-line...
                 </p>
                 
                 <div class="flex flex-wrap gap-1">
                     <span class="inline-block bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded">
-                        Note-taking &amp; Editors
+                        Remote Access
                     </span>
                 </div>
             </div>
             <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md transition-shadow duration-200">
                 <div class="flex items-start justify-between mb-3">
                     <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                        <a href="/apps/memos.html" class="hover:text-primary-600 dark:hover:text-primary-400">
-                            Memos
+                        <a href="/apps/teslamate.html" class="hover:text-primary-600 dark:hover:text-primary-400">
+                            TeslaMate
                         </a>
                     </h3>
                     <div class="flex items-center text-yellow-500">
                         <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                         </svg>
-                        <span class="text-sm">43.1k</span>
+                        <span class="text-sm">6.9k</span>
                     </div>
                 </div>
                 
                 <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">
-                    Knowledge base that works with a SQLite db file.
+                    A powerful data logger for Tesla vehicles.
                 </p>
                 
                 <div class="flex flex-wrap gap-1">
                     <span class="inline-block bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded">
-                        Note-taking &amp; Editors
-                    </span>
-                </div>
-            </div>
-            <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md transition-shadow duration-200">
-                <div class="flex items-start justify-between mb-3">
-                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                        <a href="/apps/triliumnext-notes.html" class="hover:text-primary-600 dark:hover:text-primary-400">
-                            TriliumNext Notes
-                        </a>
-                    </h3>
-                    <div class="flex items-center text-yellow-500">
-                        <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                        </svg>
-                        <span class="text-sm">29.7k</span>
-                    </div>
-                </div>
-                
-                <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">
-                    Cross-platform hierarchical note taking application with focus on building large personal knowledge...
-                </p>
-                
-                <div class="flex flex-wrap gap-1">
-                    <span class="inline-block bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded">
-                        Note-taking &amp; Editors
-                    </span>
-                </div>
-            </div>
-            <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md transition-shadow duration-200">
-                <div class="flex items-start justify-between mb-3">
-                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                        <a href="/apps/overleaf.html" class="hover:text-primary-600 dark:hover:text-primary-400">
-                            Overleaf
-                        </a>
-                    </h3>
-                    <div class="flex items-center text-yellow-500">
-                        <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                        </svg>
-                        <span class="text-sm">16.3k</span>
-                    </div>
-                </div>
-                
-                <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">
-                    Web-based collaborative LaTeX editor.
-                </p>
-                
-                <div class="flex flex-wrap gap-1">
-                    <span class="inline-block bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded">
-                        Note-taking &amp; Editors
-                    </span>
-                </div>
-            </div>
-            <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md transition-shadow duration-200">
-                <div class="flex items-start justify-between mb-3">
-                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                        <a href="/apps/docs.html" class="hover:text-primary-600 dark:hover:text-primary-400">
-                            Docs
-                        </a>
-                    </h3>
-                    <div class="flex items-center text-yellow-500">
-                        <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                        </svg>
-                        <span class="text-sm">12.8k</span>
-                    </div>
-                </div>
-                
-                <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">
-                    Collaborative note taking, wiki and documentation platform that scales.
-                </p>
-                
-                <div class="flex flex-wrap gap-1">
-                    <span class="inline-block bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded">
-                        Note-taking &amp; Editors
-                    </span>
-                    <span class="inline-block bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded">
-                        Knowledge Management Tools
+                        Miscellaneous
                     </span>
                 </div>
             </div>
@@ -396,12 +323,90 @@
                     </span>
                 </div>
             </div>
+            <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md transition-shadow duration-200">
+                <div class="flex items-start justify-between mb-3">
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                        <a href="/apps/blinko.html" class="hover:text-primary-600 dark:hover:text-primary-400">
+                            Blinko
+                        </a>
+                    </h3>
+                    <div class="flex items-center text-yellow-500">
+                        <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <span class="text-sm">5.1k</span>
+                    </div>
+                </div>
+                
+                <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">
+                    A personal note tool with AI features.
+                </p>
+                
+                <div class="flex flex-wrap gap-1">
+                    <span class="inline-block bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded">
+                        Note-taking &amp; Editors
+                    </span>
+                </div>
+            </div>
+            <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md transition-shadow duration-200">
+                <div class="flex items-start justify-between mb-3">
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                        <a href="/apps/asciinema.html" class="hover:text-primary-600 dark:hover:text-primary-400">
+                            asciinema
+                        </a>
+                    </h3>
+                    <div class="flex items-center text-yellow-500">
+                        <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <span class="text-sm">2.4k</span>
+                    </div>
+                </div>
+                
+                <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">
+                    Web app for hosting asciicasts.
+                </p>
+                
+                <div class="flex flex-wrap gap-1">
+                    <span class="inline-block bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded">
+                        Miscellaneous
+                    </span>
+                </div>
+            </div>
+            <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md transition-shadow duration-200">
+                <div class="flex items-start justify-between mb-3">
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                        <a href="/apps/azimutt.html" class="hover:text-primary-600 dark:hover:text-primary-400">
+                            Azimutt
+                        </a>
+                    </h3>
+                    <div class="flex items-center text-yellow-500">
+                        <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <span class="text-sm">1.9k</span>
+                    </div>
+                </div>
+                
+                <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">
+                    Visual database exploration made for real world databases (big and messy). Explore your database...
+                </p>
+                
+                <div class="flex flex-wrap gap-1">
+                    <span class="inline-block bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded">
+                        Database Management
+                    </span>
+                    <span class="inline-block bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded">
+                        Software Development - IDE &amp; Tools
+                    </span>
+                </div>
+            </div>
         </div>
     </div>
 
     <!-- Back Navigation -->
     <div class="mt-8 text-center">
-        <a href="/browse.html" class="inline-flex items-center px-6 py-3 bg-gray-600 hover:bg-gray-700 text-white font-medium rounded-lg shadow-lg transform transition hover:scale-105">
+        <a href="/" class="inline-flex items-center px-6 py-3 bg-gray-600 hover:bg-gray-700 text-white font-medium rounded-lg shadow-lg transform transition hover:scale-105">
             <svg class="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
             </svg>
@@ -417,9 +422,7 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div class="col-span-1 md:col-span-2">
                     <div class="flex items-center space-x-2 mb-4">
-                        <svg class="h-8 w-8 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12l4-4m-4 4l4 4"/>
-                        </svg>
+                        <img src="/static/images/logo.svg" alt="Logo" class="h-8 w-8">
                         <span class="text-xl font-bold text-gray-900 dark:text-white">Awesome Selfhosted</span>
                     </div>
                     <p class="text-gray-600 dark:text-gray-400 mb-4">
@@ -435,29 +438,56 @@
                         Navigation
                     </h3>
                     <ul class="space-y-2">
-                        <li><a href="/" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">Home</a></li>
-                        <li><a href="/browse.html" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">Browse Apps</a></li>
-                        <li><a href="/browse.html#categories" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">Categories</a></li>
+                        <li>
+                            <a href="/" 
+                               class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/statistics.html" 
+                               class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
+                                Statistics
+                            </a>
+                        </li>
                     </ul>
                 </div>
-                
                 <div>
                     <h3 class="text-sm font-semibold text-gray-900 dark:text-white uppercase tracking-wider mb-4">
                         Resources
                     </h3>
                     <ul class="space-y-2">
-                        <li><a href="https://github.com/awesome-selfhosted/awesome-selfhosted" target="_blank" rel="noopener" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">GitHub</a></li>
-                        <li><a href="https://github.com/awesome-selfhosted/awesome-selfhosted-data" target="_blank" rel="noopener" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">Data Source</a></li>
-                        <li><a href="/sitemap.xml" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">Sitemap</a></li>
+                        <li>
+                            <a href="https://github.com/awesome-selfhosted/awesome-selfhosted" 
+target="_blank" rel="noopener"                               class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
+                                GitHub
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/awesome-selfhosted/awesome-selfhosted-data" 
+target="_blank" rel="noopener"                               class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
+                                Data Source
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/sitemap.xml" 
+                               class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
+                                Sitemap
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
             
             <div class="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700">
                 <p class="text-center text-sm text-gray-500 dark:text-gray-500">
-                    &copy; 2024 Awesome Selfhosted. Data from 
-                    <a href="https://github.com/awesome-selfhosted/awesome-selfhosted" target="_blank" rel="noopener" class="text-primary-600 hover:text-primary-500">
-                        awesome-selfhosted
+                    Copyright © 2015-2025, the Awesome Selfhosted community. Data from 
+                    <a href="https://github.com/awesome-selfhosted/awesome-selfhosted-data" target="_blank" rel="noopener" class="text-primary-600 hover:text-primary-500">
+                        awesome-selfhosted-data
+                    </a>
+                    <br>
+                    <a href="https://github.com/awesome-selfhosted/awesome-selfhosted-data/blob/master/LICENSE" target="_blank" rel="noopener" class="text-primary-600 hover:text-primary-500">
+                        Content under CC-BY-SA 3.0 license
                     </a>
                 </p>
             </div>
