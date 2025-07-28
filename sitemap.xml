@@ -2301,6 +2301,10 @@
 <priority>0.7</priority>        <changefreq>weekly</changefreq>
     </url>
     <url>
+        <loc>https://awesome-selfhosted.net/apps/harbor.html</loc>
+<priority>0.7</priority>        <changefreq>weekly</changefreq>
+    </url>
+    <url>
         <loc>https://awesome-selfhosted.net/apps/kasm-workspaces.html</loc>
 <priority>0.7</priority>        <changefreq>weekly</changefreq>
     </url>
@@ -4130,10 +4134,6 @@
     </url>
     <url>
         <loc>https://awesome-selfhosted.net/apps/filestash.html</loc>
-<priority>0.7</priority>        <changefreq>weekly</changefreq>
-    </url>
-    <url>
-        <loc>https://awesome-selfhosted.net/apps/maybe.html</loc>
 <priority>0.7</priority>        <changefreq>weekly</changefreq>
     </url>
     <url>
