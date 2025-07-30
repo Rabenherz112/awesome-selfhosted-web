@@ -524,7 +524,15 @@ class BrowsePage {
                 </svg>
             </div>
         ` : '';
-        
+
+        const docLanguageIcon = app.documentation_language && Array.isArray(app.documentation_language) && app.documentation_language.length > 0 ? `
+            <div class="flex items-center text-orange-500 flex-shrink-0" title="Documentation only in ${app.documentation_language.join(', ')}">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd"/>
+                </svg>
+            </div>
+        ` : '';
+
         const starsIcon = app.stars ? `
             <div class="flex items-center text-yellow-500 flex-shrink-0">
                 <svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20">
@@ -544,15 +552,14 @@ class BrowsePage {
             </div>
         ` : '';
 
-        const releaseIcon = app.current_release ? `
-            <div class="flex items-center text-blue-500 flex-shrink-0" title="Latest release: ${app.current_release.tag}${app.current_release.published_at ? ' • Released on ' + this.formatReleaseDate(app.current_release.published_at) : ''}">
-                <svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.293l-3-3a1 1 0 00-1.414 0l-3 3a1 1 0 001.414 1.414L9 9.414V13a1 1 0 102 0V9.414l1.293 1.293a1 1 0 001.414-1.414z" clip-rule="evenodd"/>
+        const forkIcon = app.fork_of ? `
+            <div class="flex-shrink-0" title="Fork of ${app.fork_of}">
+                <svg class="w-4 h-4 text-blue-500" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                  <path d="M13.273 7.73a2.51 2.51 0 0 0-3.159-.31 2.5 2.5 0 0 0-.921 1.12 2.23 2.23 0 0 0-.13.44 4.52 4.52 0 0 1-4-4 2.23 2.23 0 0 0 .44-.13 2.5 2.5 0 0 0 1.54-2.31 2.45 2.45 0 0 0-.19-1A2.48 2.48 0 0 0 5.503.19a2.45 2.45 0 0 0-1-.19 2.5 2.5 0 0 0-2.31 1.54 2.52 2.52 0 0 0 .54 2.73c.35.343.79.579 1.27.68v5.1a2.411 2.411 0 0 0-.89.37 2.5 2.5 0 1 0 3.47 3.468 2.5 2.5 0 0 0 .42-1.387 2.45 2.45 0 0 0-.19-1 2.48 2.48 0 0 0-1.81-1.49v-2.4a5.52 5.52 0 0 0 2 1.73 5.65 5.65 0 0 0 2.09.6 2.5 2.5 0 0 0 4.95-.49 2.51 2.51 0 0 0-.77-1.72zm-8.2 3.38c.276.117.512.312.68.56a1.5 1.5 0 0 1-2.08 2.08 1.55 1.55 0 0 1-.56-.68 1.49 1.49 0 0 1-.08-.86 1.49 1.49 0 0 1 1.18-1.18 1.49 1.49 0 0 1 .86.08zM4.503 4a1.5 1.5 0 0 1-1.39-.93 1.49 1.49 0 0 1-.08-.86 1.49 1.49 0 0 1 1.18-1.18 1.49 1.49 0 0 1 .86.08A1.5 1.5 0 0 1 4.503 4zm8.06 6.56a1.5 1.5 0 0 1-2.45-.49 1.49 1.49 0 0 1-.08-.86 1.49 1.49 0 0 1 1.18-1.18 1.49 1.49 0 0 1 .86.08 1.499 1.499 0 0 1 .49 2.45z"/>
                 </svg>
-                <span class="text-xs font-medium">${app.current_release.tag}</span>
             </div>
         ` : '';
-        
+
         const categoriesHtml = app.tags ? app.tags.slice(0, 2).map(category => 
             `<span class="inline-block bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 text-xs px-2 py-1 rounded-full mr-1 mb-1">${category}</span>`
         ).join('') + (app.tags.length > 2 ? `<span class="inline-block bg-gray-100 text-gray-600 dark:bg-gray-700 dark:text-gray-400 text-xs px-2 py-1 rounded-full mr-1 mb-1">+${app.tags.length - 2}</span>` : '') : '';
@@ -561,7 +568,29 @@ class BrowsePage {
         const platformsHtml = app.platforms && app.platforms.length > 0 ? app.platforms.slice(0, 3).map(platform => 
             `<span class="inline-block bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200 text-xs px-2 py-1 rounded-full mr-1 mb-1">${platform}</span>`
         ).join('') + (app.platforms.length > 3 ? `<span class="inline-block bg-gray-100 text-gray-600 dark:bg-gray-700 dark:text-gray-400 text-xs px-2 py-1 rounded-full mr-1 mb-1">+${app.platforms.length - 3}</span>` : '') : '';
-        
+
+        // License display (first license + count if multiple)
+        let licenseBadge = '';
+        let licenseText = '';
+        let licenseClass = '';
+        if (app.license && app.license.length > 0) {
+            const firstLicense = app.license[0];
+            if (app.license.length === 1) {
+                licenseText = firstLicense;
+            } else {
+                licenseText = `${firstLicense} (+${app.license.length - 1})`;
+            }
+            
+            // Check if it's a non-free license
+            const isNonFree = this.isNonFreeLicense(app.license);
+            if (isNonFree) {
+                licenseClass = 'inline-block text-xs px-2 py-1 ml-3 border border-orange-300 dark:border-orange-600 text-orange-700 dark:text-orange-300 bg-orange-50 dark:bg-orange-900/20 rounded';
+            } else {
+                licenseClass = 'inline-block text-xs px-2 py-1 ml-3 border border-gray-300 dark:border-gray-600 text-gray-600 dark:text-gray-400 bg-gray-50 dark:bg-gray-800 rounded';
+            }
+            licenseBadge = `<span class="${licenseClass}">${licenseText}</span>`;
+        };
+
         // Only show buttons when they have valid URLs
         const demoLink = (app.demo_url && app.demo_url.trim()) ? `
             <a href="${app.demo_url}" target="_blank" rel="noopener" class="text-primary-600 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300 font-medium">
@@ -586,17 +615,21 @@ class BrowsePage {
             <div class="p-4 flex flex-col flex-grow">
                 <div class="flex items-start justify-between mb-3">
                     <div class="flex-1 min-w-0">
-                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white truncate">
-                            <a href="/apps/${app.id}.html" class="hover:text-primary-600 dark:hover:text-primary-400">
-                                ${app.name}
-                            </a>
-                        </h3>
+                        <div class="flex items-center gap-2">
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white truncate">
+                                <a href="/apps/${app.id}.html" class="hover:text-primary-600 dark:hover:text-primary-400">
+                                    ${app.name}
+                                </a>
+                            </h3>
+                            ${licenseBadge}
+                        </div>
                     </div>
                     <div class="flex items-center space-x-2 ml-2">
                         ${dependsIcon}
+                        ${docLanguageIcon}
                         ${starsIcon}
                         ${clockIcon}
-                        ${releaseIcon}
+                        ${forkIcon}
                     </div>
                 </div>
                 
