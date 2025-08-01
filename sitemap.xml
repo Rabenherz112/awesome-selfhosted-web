@@ -489,10 +489,6 @@
 <priority>0.7</priority>        <changefreq>weekly</changefreq>
     </url>
     <url>
-        <loc>https://awesome-selfhosted.net/apps/homebox.html</loc>
-<priority>0.7</priority>        <changefreq>weekly</changefreq>
-    </url>
-    <url>
         <loc>https://awesome-selfhosted.net/apps/simple-url-shortener.html</loc>
 <priority>0.7</priority>        <changefreq>weekly</changefreq>
     </url>
@@ -3789,10 +3785,6 @@
 <priority>0.7</priority>        <changefreq>weekly</changefreq>
     </url>
     <url>
-        <loc>https://awesome-selfhosted.net/apps/holoplay.html</loc>
-<priority>0.7</priority>        <changefreq>weekly</changefreq>
-    </url>
-    <url>
         <loc>https://awesome-selfhosted.net/apps/ots.html</loc>
 <priority>0.7</priority>        <changefreq>weekly</changefreq>
     </url>
@@ -5078,10 +5070,6 @@
     </url>
     <url>
         <loc>https://awesome-selfhosted.net/apps/anythingllm.html</loc>
-<priority>0.7</priority>        <changefreq>weekly</changefreq>
-    </url>
-    <url>
-        <loc>https://awesome-selfhosted.net/apps/klaus.html</loc>
 <priority>0.7</priority>        <changefreq>weekly</changefreq>
     </url>
     <url>

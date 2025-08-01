@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /static/data/
+
+Sitemap: https://awesome-selfhosted.net/sitemap.xml
