@@ -14,6 +14,12 @@
     <meta name="open-internal-new-tab" content="False">
     <meta name="browse-description-length" content="250">
     <meta name="browse-description-full" content="False">
+    <meta name="search-min-query-length" content="3">
+    <meta name="search-fuzzy-threshold" content="0.3">
+    <meta name="search-max-results" content="8">
+    <meta name="browse-max-tags-per-card" content="2">
+    <meta name="browse-max-platforms-per-card" content="3">
+    <meta name="lazy-load-images" content="True">
 
     <!-- Open Graph tags -->
     <meta property="og:title" content="Cannery - Self-Hosted Application - Awesome Selfhosted">
@@ -27,6 +33,7 @@
     <meta name="twitter:description" content="Discover and explore self-hosted applications">
 
     <!-- Tailwind CSS -->
+    <!--
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -51,6 +58,8 @@
             }
         }
     </script>
+    -->
+    <link rel="stylesheet" href="/static/css/tailwind.css">
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/static/css/custom.css">
@@ -180,7 +189,8 @@
             
             <!-- Action Buttons -->
             <div class="flex space-x-3">
-                
+
+
                 <a href="https://cannery.app"
                    class="inline-flex items-center px-4 py-2 bg-primary-600 hover:bg-primary-700 text-white font-medium rounded-lg shadow transition-colors">
                     <svg class="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -231,7 +241,6 @@
                     GNU Affero General Public License 3.0
                 </div>
             </div>
-
 
 
 
@@ -286,7 +295,7 @@
                 </div>
                 
                 <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">
-                    &lt;span class=&#34;description-fade&#34;&gt;Open business management platform for collaborative, on-demand and sharing economies&lt;span class=&#34;fade-ellipsis&#34;&gt;...&lt;/span&gt;&lt;/span&gt;
+                    Open business management platform for collaborative, on-demand and sharing economies...
                 </p>
                 
                 <div class="flex flex-wrap gap-1">
@@ -395,7 +404,7 @@
                 </div>
                 
                 <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">
-                    &lt;span class=&#34;description-fade&#34;&gt;Grocery shopping app (previously Groceries), providing reliable sync with multiple users/devices&lt;span class=&#34;fade-ellipsis&#34;&gt;...&lt;/span&gt;&lt;/span&gt;
+                    Grocery shopping app (previously Groceries), providing reliable sync with multiple users/devices...
                 </p>
                 
                 <div class="flex flex-wrap gap-1">
@@ -446,12 +455,14 @@
                     <ul class="space-y-2">
                         <li>
                             <a href="/" 
+                               
                                class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
                                 Home
                             </a>
                         </li>
                         <li>
                             <a href="/statistics.html" 
+                               
                                class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
                                 Statistics
                             </a>
@@ -465,18 +476,21 @@
                     <ul class="space-y-2">
                         <li>
                             <a href="https://github.com/awesome-selfhosted/awesome-selfhosted" 
-target="_blank" rel="noopener"                               class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
+                               
+                               class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
                                 GitHub
                             </a>
                         </li>
                         <li>
                             <a href="https://github.com/awesome-selfhosted/awesome-selfhosted-data" 
-target="_blank" rel="noopener"                               class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
+                               
+                               class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
                                 Data Source
                             </a>
                         </li>
                         <li>
                             <a href="/sitemap.xml" 
+                               
                                class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
                                 Sitemap
                             </a>
@@ -488,11 +502,11 @@ target="_blank" rel="noopener"                               class="text-gray-60
             <div class="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700">
                 <p class="text-center text-sm text-gray-500 dark:text-gray-500">
                     Copyright © 2015-2025, the Awesome Selfhosted community. Data from 
-                    <a href="https://github.com/awesome-selfhosted/awesome-selfhosted-data" target="_blank" rel="noopener" class="text-primary-600 hover:text-primary-500">
+                    <a href="https://github.com/awesome-selfhosted/awesome-selfhosted-data" class="text-primary-600 hover:text-primary-500">
                         awesome-selfhosted-data
                     </a>
                     <br>
-                    <a href="https://github.com/awesome-selfhosted/awesome-selfhosted-data/blob/master/LICENSE" target="_blank" rel="noopener" class="text-primary-600 hover:text-primary-500">
+                    <a href="https://github.com/awesome-selfhosted/awesome-selfhosted-data/blob/master/LICENSE" class="text-primary-600 hover:text-primary-500">
                         Content under CC-BY-SA 3.0 license
                     </a>
                 </p>

@@ -14,6 +14,12 @@
     <meta name="open-internal-new-tab" content="False">
     <meta name="browse-description-length" content="250">
     <meta name="browse-description-full" content="False">
+    <meta name="search-min-query-length" content="3">
+    <meta name="search-fuzzy-threshold" content="0.3">
+    <meta name="search-max-results" content="8">
+    <meta name="browse-max-tags-per-card" content="2">
+    <meta name="browse-max-platforms-per-card" content="3">
+    <meta name="lazy-load-images" content="True">
 
     <!-- Open Graph tags -->
     <meta property="og:title" content="Browse Applications - Awesome Selfhosted">
@@ -27,6 +33,7 @@
     <meta name="twitter:description" content="Discover and explore self-hosted applications">
 
     <!-- Tailwind CSS -->
+    <!--
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -51,6 +58,8 @@
             }
         }
     </script>
+    -->
+    <link rel="stylesheet" href="/static/css/tailwind.css">
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/static/css/custom.css">
@@ -159,6 +168,62 @@
     
     <!-- Main Content -->
     <main class="min-h-screen">
+<!-- JavaScript Required Notification -->
+<div id="js-required-notification" class="bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-400 p-4 mb-6">
+    <div class="flex">
+        <div class="flex-shrink-0">
+            <svg class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+            </svg>
+        </div>
+        <div class="ml-3">
+            <h3 class="text-sm font-medium text-yellow-800 dark:text-yellow-200">
+                JavaScript Required
+            </h3>
+            <div class="mt-2 text-sm text-yellow-700 dark:text-yellow-300">
+                <p>
+                    This page requires JavaScript to function properly. Please enable JavaScript in your browser to browse and filter applications.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- NoScript fallback content -->
+<noscript>
+    <div class="max-w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mb-6">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+                JavaScript Required
+            </h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-4">
+                This browse page requires JavaScript to function properly. The page provides dynamic filtering, sorting, and pagination of applications.
+            </p>
+            <div class="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-400 p-4">
+                <div class="flex">
+                    <div class="flex-shrink-0">
+                        <svg class="h-5 w-5 text-blue-400" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div class="ml-3">
+                        <h4 class="text-sm font-medium text-blue-800 dark:text-blue-200">
+                            To enable JavaScript:
+                        </h4>
+                        <div class="mt-2 text-sm text-blue-700 dark:text-blue-300">
+                            <ul class="list-disc list-inside space-y-1">
+                                <li>Chrome/Edge: Settings → Privacy and security → Site Settings → JavaScript</li>
+                                <li>Firefox: about:config → javascript.enabled → true</li>
+                                <li>Safari: Preferences → Security → Enable JavaScript</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</noscript>
+
 <div class="max-w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
     <!-- Page Header -->
     <div class="mb-8">
@@ -166,7 +231,7 @@
             Browse Applications
         </h1>
         <p class="text-lg text-gray-600 dark:text-gray-300">
-            Discover 1272 self-hosted applications
+            Discover 1271 self-hosted applications
         </p>
     </div>
 
@@ -219,7 +284,7 @@
             <!-- Sort Controls -->
             <div class="flex justify-between items-center mb-6 bg-white dark:bg-gray-800 rounded-lg shadow-md p-4">
                 <div class="text-sm text-gray-600 dark:text-gray-400">
-                    Showing <span id="visibleCount">Loading...</span> of <span id="totalCount">1272</span> applications
+                    Showing <span id="visibleCount">Loading...</span> of <span id="totalCount">1271</span> applications
                 </div>
                 <div class="flex space-x-2">
                     <button id="sortName" class="sort-button active">
@@ -298,12 +363,14 @@
                     <ul class="space-y-2">
                         <li>
                             <a href="/" 
+                               
                                class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
                                 Home
                             </a>
                         </li>
                         <li>
                             <a href="/statistics.html" 
+                               
                                class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
                                 Statistics
                             </a>
@@ -317,18 +384,21 @@
                     <ul class="space-y-2">
                         <li>
                             <a href="https://github.com/awesome-selfhosted/awesome-selfhosted" 
-target="_blank" rel="noopener"                               class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
+                               
+                               class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
                                 GitHub
                             </a>
                         </li>
                         <li>
                             <a href="https://github.com/awesome-selfhosted/awesome-selfhosted-data" 
-target="_blank" rel="noopener"                               class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
+                               
+                               class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
                                 Data Source
                             </a>
                         </li>
                         <li>
                             <a href="/sitemap.xml" 
+                               
                                class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
                                 Sitemap
                             </a>
@@ -340,11 +410,11 @@ target="_blank" rel="noopener"                               class="text-gray-60
             <div class="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700">
                 <p class="text-center text-sm text-gray-500 dark:text-gray-500">
                     Copyright © 2015-2025, the Awesome Selfhosted community. Data from 
-                    <a href="https://github.com/awesome-selfhosted/awesome-selfhosted-data" target="_blank" rel="noopener" class="text-primary-600 hover:text-primary-500">
+                    <a href="https://github.com/awesome-selfhosted/awesome-selfhosted-data" class="text-primary-600 hover:text-primary-500">
                         awesome-selfhosted-data
                     </a>
                     <br>
-                    <a href="https://github.com/awesome-selfhosted/awesome-selfhosted-data/blob/master/LICENSE" target="_blank" rel="noopener" class="text-primary-600 hover:text-primary-500">
+                    <a href="https://github.com/awesome-selfhosted/awesome-selfhosted-data/blob/master/LICENSE" class="text-primary-600 hover:text-primary-500">
                         Content under CC-BY-SA 3.0 license
                     </a>
                 </p>

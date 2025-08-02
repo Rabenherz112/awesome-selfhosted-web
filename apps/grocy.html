@@ -14,6 +14,12 @@
     <meta name="open-internal-new-tab" content="False">
     <meta name="browse-description-length" content="250">
     <meta name="browse-description-full" content="False">
+    <meta name="search-min-query-length" content="3">
+    <meta name="search-fuzzy-threshold" content="0.3">
+    <meta name="search-max-results" content="8">
+    <meta name="browse-max-tags-per-card" content="2">
+    <meta name="browse-max-platforms-per-card" content="3">
+    <meta name="lazy-load-images" content="True">
 
     <!-- Open Graph tags -->
     <meta property="og:title" content="grocy - Self-Hosted Application - Awesome Selfhosted">
@@ -27,6 +33,7 @@
     <meta name="twitter:description" content="Discover and explore self-hosted applications">
 
     <!-- Tailwind CSS -->
+    <!--
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -51,6 +58,8 @@
             }
         }
     </script>
+    -->
+    <link rel="stylesheet" href="/static/css/tailwind.css">
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/static/css/custom.css">
@@ -194,7 +203,8 @@
                     </svg>
                     Live Demo
                 </a>
-                
+
+
                 <a href="https://grocy.info/"
                    class="inline-flex items-center px-4 py-2 bg-primary-600 hover:bg-primary-700 text-white font-medium rounded-lg shadow transition-colors">
                     <svg class="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -252,7 +262,6 @@
             </div>
 
 
-
         </div>
     </div>
 
@@ -266,25 +275,94 @@
             <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md transition-shadow duration-200">
                 <div class="flex items-start justify-between mb-3">
                     <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                        <a href="/apps/farmos.html" class="hover:text-primary-600 dark:hover:text-primary-400">
-                            farmOS
+                        <a href="/apps/filerun.html" class="hover:text-primary-600 dark:hover:text-primary-400">
+                            FileRun
+                        </a>
+                    </h3>
+                </div>
+                
+                <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">
+                    Complete solution for your files with integration with Google and Office
+                </p>
+                
+                <div class="flex flex-wrap gap-1">
+                    <span class="inline-block bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded">
+                        File Transfer &amp; Synchronization
+                    </span>
+                </div>
+            </div>
+            <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md transition-shadow duration-200">
+                <div class="flex items-start justify-between mb-3">
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                        <a href="/apps/openemr.html" class="hover:text-primary-600 dark:hover:text-primary-400">
+                            OpenEMR
                         </a>
                     </h3>
                     <div class="flex items-center text-yellow-500">
                         <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                         </svg>
-                        <span class="text-sm">1.1k</span>
+                        <span class="text-sm">3.6k</span>
                     </div>
                 </div>
                 
                 <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">
-                    Web-based farm record keeping application
+                    Electronic health records and medical practice management solution
                 </p>
                 
                 <div class="flex flex-wrap gap-1">
                     <span class="inline-block bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded">
-                        Resource Planning
+                        Health and Fitness
+                    </span>
+                </div>
+            </div>
+            <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md transition-shadow duration-200">
+                <div class="flex items-start justify-between mb-3">
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                        <a href="/apps/owncloud.html" class="hover:text-primary-600 dark:hover:text-primary-400">
+                            ownCloud
+                        </a>
+                    </h3>
+                    <div class="flex items-center text-yellow-500">
+                        <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <span class="text-sm">8.6k</span>
+                    </div>
+                </div>
+                
+                <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">
+                    All-in-one solution for saving, synchronizing, viewing, editing and sharing files, calendars,...
+                </p>
+                
+                <div class="flex flex-wrap gap-1">
+                    <span class="inline-block bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded">
+                        File Transfer &amp; Synchronization
+                    </span>
+                </div>
+            </div>
+            <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md transition-shadow duration-200">
+                <div class="flex items-start justify-between mb-3">
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                        <a href="/apps/krayin.html" class="hover:text-primary-600 dark:hover:text-primary-400">
+                            Krayin
+                        </a>
+                    </h3>
+                    <div class="flex items-center text-yellow-500">
+                        <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <span class="text-sm">16.1k</span>
+                    </div>
+                </div>
+                
+                <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">
+                    CRM solution for SMEs and Enterprises for complete customer lifecycle management
+                </p>
+                
+                <div class="flex flex-wrap gap-1">
+                    <span class="inline-block bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded">
+                        Customer Relationship Management (CRM)
                     </span>
                 </div>
             </div>
@@ -304,7 +382,7 @@
                 </div>
                 
                 <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">
-                    &lt;span class=&#34;description-fade&#34;&gt;Modern CRM software package to manage your company or foundation activity (contacts, suppliers,&lt;span class=&#34;fade-ellipsis&#34;&gt;...&lt;/span&gt;&lt;/span&gt;
+                    Modern CRM software package to manage your company or foundation activity (contacts, suppliers,...
                 </p>
                 
                 <div class="flex flex-wrap gap-1">
@@ -332,7 +410,7 @@
                 </div>
                 
                 <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">
-                    &lt;span class=&#34;description-fade&#34;&gt;Open business management platform for collaborative, on-demand and sharing economies&lt;span class=&#34;fade-ellipsis&#34;&gt;...&lt;/span&gt;&lt;/span&gt;
+                    Open business management platform for collaborative, on-demand and sharing economies...
                 </p>
                 
                 <div class="flex flex-wrap gap-1">
@@ -341,81 +419,6 @@
                     </span>
                     <span class="inline-block bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded">
                         Inventory Management
-                    </span>
-                </div>
-            </div>
-            <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md transition-shadow duration-200">
-                <div class="flex items-start justify-between mb-3">
-                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                        <a href="/apps/owncloud.html" class="hover:text-primary-600 dark:hover:text-primary-400">
-                            ownCloud
-                        </a>
-                    </h3>
-                    <div class="flex items-center text-yellow-500">
-                        <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                        </svg>
-                        <span class="text-sm">8.6k</span>
-                    </div>
-                </div>
-                
-                <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">
-                    &lt;span class=&#34;description-fade&#34;&gt;All-in-one solution for saving, synchronizing, viewing, editing and sharing files, calendars,&lt;span class=&#34;fade-ellipsis&#34;&gt;...&lt;/span&gt;&lt;/span&gt;
-                </p>
-                
-                <div class="flex flex-wrap gap-1">
-                    <span class="inline-block bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded">
-                        File Transfer &amp; Synchronization
-                    </span>
-                </div>
-            </div>
-            <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md transition-shadow duration-200">
-                <div class="flex items-start justify-between mb-3">
-                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                        <a href="/apps/rss-bridge.html" class="hover:text-primary-600 dark:hover:text-primary-400">
-                            RSS-Bridge
-                        </a>
-                    </h3>
-                    <div class="flex items-center text-yellow-500">
-                        <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                        </svg>
-                        <span class="text-sm">8.1k</span>
-                    </div>
-                </div>
-                
-                <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">
-                    Generate RSS/ATOM feeds for websites which don&#39;t have one
-                </p>
-                
-                <div class="flex flex-wrap gap-1">
-                    <span class="inline-block bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded">
-                        Feed Readers
-                    </span>
-                </div>
-            </div>
-            <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md transition-shadow duration-200">
-                <div class="flex items-start justify-between mb-3">
-                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                        <a href="/apps/wallos.html" class="hover:text-primary-600 dark:hover:text-primary-400">
-                            Wallos
-                        </a>
-                    </h3>
-                    <div class="flex items-center text-yellow-500">
-                        <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                        </svg>
-                        <span class="text-sm">5.8k</span>
-                    </div>
-                </div>
-                
-                <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">
-                    Lightweight personal subscription tracker with statistics and optional notifications
-                </p>
-                
-                <div class="flex flex-wrap gap-1">
-                    <span class="inline-block bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded">
-                        Money, Budgeting &amp; Management
                     </span>
                 </div>
             </div>
@@ -458,12 +461,14 @@
                     <ul class="space-y-2">
                         <li>
                             <a href="/" 
+                               
                                class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
                                 Home
                             </a>
                         </li>
                         <li>
                             <a href="/statistics.html" 
+                               
                                class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
                                 Statistics
                             </a>
@@ -477,18 +482,21 @@
                     <ul class="space-y-2">
                         <li>
                             <a href="https://github.com/awesome-selfhosted/awesome-selfhosted" 
-target="_blank" rel="noopener"                               class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
+                               
+                               class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
                                 GitHub
                             </a>
                         </li>
                         <li>
                             <a href="https://github.com/awesome-selfhosted/awesome-selfhosted-data" 
-target="_blank" rel="noopener"                               class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
+                               
+                               class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
                                 Data Source
                             </a>
                         </li>
                         <li>
                             <a href="/sitemap.xml" 
+                               
                                class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
                                 Sitemap
                             </a>
@@ -500,11 +508,11 @@ target="_blank" rel="noopener"                               class="text-gray-60
             <div class="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700">
                 <p class="text-center text-sm text-gray-500 dark:text-gray-500">
                     Copyright © 2015-2025, the Awesome Selfhosted community. Data from 
-                    <a href="https://github.com/awesome-selfhosted/awesome-selfhosted-data" target="_blank" rel="noopener" class="text-primary-600 hover:text-primary-500">
+                    <a href="https://github.com/awesome-selfhosted/awesome-selfhosted-data" class="text-primary-600 hover:text-primary-500">
                         awesome-selfhosted-data
                     </a>
                     <br>
-                    <a href="https://github.com/awesome-selfhosted/awesome-selfhosted-data/blob/master/LICENSE" target="_blank" rel="noopener" class="text-primary-600 hover:text-primary-500">
+                    <a href="https://github.com/awesome-selfhosted/awesome-selfhosted-data/blob/master/LICENSE" class="text-primary-600 hover:text-primary-500">
                         Content under CC-BY-SA 3.0 license
                     </a>
                 </p>

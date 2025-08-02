@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>scholarsome - Self-Hosted Application - Awesome Selfhosted</title>
+    <title>gobookmarks - Self-Hosted Application - Awesome Selfhosted</title>
 
     <!-- Meta tags -->
     <meta name="description" content="Discover and explore self-hosted applications">
@@ -14,19 +14,26 @@
     <meta name="open-internal-new-tab" content="False">
     <meta name="browse-description-length" content="250">
     <meta name="browse-description-full" content="False">
+    <meta name="search-min-query-length" content="3">
+    <meta name="search-fuzzy-threshold" content="0.3">
+    <meta name="search-max-results" content="8">
+    <meta name="browse-max-tags-per-card" content="2">
+    <meta name="browse-max-platforms-per-card" content="3">
+    <meta name="lazy-load-images" content="True">
 
     <!-- Open Graph tags -->
-    <meta property="og:title" content="scholarsome - Self-Hosted Application - Awesome Selfhosted">
+    <meta property="og:title" content="gobookmarks - Self-Hosted Application - Awesome Selfhosted">
     <meta property="og:description" content="Discover and explore self-hosted applications">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://awesome-selfhosted.net">
 
     <!-- Twitter Card tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="scholarsome - Self-Hosted Application - Awesome Selfhosted">
+    <meta name="twitter:title" content="gobookmarks - Self-Hosted Application - Awesome Selfhosted">
     <meta name="twitter:description" content="Discover and explore self-hosted applications">
 
     <!-- Tailwind CSS -->
+    <!--
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -51,6 +58,8 @@
             }
         }
     </script>
+    -->
+    <link rel="stylesheet" href="/static/css/tailwind.css">
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/static/css/custom.css">
@@ -166,7 +175,7 @@
         <span class="mx-2">/</span>
         <a href="/" class="hover:text-primary-600 dark:hover:text-primary-400">Browse</a>
         <span class="mx-2">/</span>
-        <span>scholarsome</span>
+        <span>gobookmarks</span>
     </div>
 
     <!-- App Header -->
@@ -174,36 +183,22 @@
         <div class="flex items-start justify-between mb-6">
             <div>
                 <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-2">
-                    scholarsome
+                    gobookmarks
                 </h1>
                 <div class="flex items-center text-yellow-500 mb-4">
                     <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
                         <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                     </svg>
-                    <span class="text-lg font-medium">635 stars</span>
+                    <span class="text-lg font-medium">1 stars</span>
                 </div>
             </div>
             
             <!-- Action Buttons -->
             <div class="flex space-x-3">
-                <a href="https://scholarsome.com/"
-                   class="inline-flex items-center px-4 py-2 bg-green-600 hover:bg-green-700 text-white font-medium rounded-lg shadow transition-colors">
-                    <svg class="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
-                    </svg>
-                    Live Demo
-                </a>
+
+
                 
-                <a href="https://www.scholarsome.com/"
-                   class="inline-flex items-center px-4 py-2 bg-primary-600 hover:bg-primary-700 text-white font-medium rounded-lg shadow transition-colors">
-                    <svg class="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                    </svg>
-                    Website
-                </a>
-                
-                <a href="https://github.com/hwgilbert16/scholarsome"
+                <a href="https://github.com/arran4/gobookmarks"
                    class="inline-flex items-center px-4 py-2 bg-gray-800 hover:bg-gray-900 dark:bg-gray-700 dark:hover:bg-gray-600 text-white font-medium rounded-lg shadow transition-colors">
                     <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
                         <path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd"/>
@@ -215,14 +210,14 @@
 
         <!-- Description -->
         <div class="prose dark:prose-invert max-w-none mb-6">
-            <p class="text-lg text-gray-700 dark:text-gray-300">Web-based and open source interactive flashcard learning software studying for the masses</p>
+            <p class="text-lg text-gray-700 dark:text-gray-300">Landing page to display bookmarks stored in GitHub, GitLab or local Git</p>
         </div>
 
         <!-- Categories -->
         <div class="mb-6">
             <h3 class="text-sm font-semibold text-gray-900 dark:text-white uppercase tracking-wider mb-3">Categories</h3>
             <div class="flex flex-wrap gap-2">
-                <span class="inline-block bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 text-sm px-3 py-1 rounded-full">Learning and Courses</span>
+                <span class="inline-block bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 text-sm px-3 py-1 rounded-full">Personal Dashboards</span>
             </div>
         </div>
 
@@ -232,9 +227,9 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 pt-6 border-t border-gray-200 dark:border-gray-700">
             <div>
                 <h4 class="text-sm font-semibold text-gray-900 dark:text-white mb-2">
-                    Platform                </h4>
+                    Platforms                </h4>
                 <div class="flex flex-wrap gap-1">
-                    <span class="inline-block bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-sm px-2 py-1 rounded">Docker</span>
+                    <span class="inline-block bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-sm px-2 py-1 rounded">Go</span> <span class="inline-block bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-sm px-2 py-1 rounded">Docker</span>
                 </div>
             </div>
 
@@ -242,15 +237,14 @@
                 <h4 class="text-sm font-semibold text-gray-900 dark:text-white mb-2">
                     License                </h4>
                 <div class="text-gray-700 dark:text-gray-300">
-                    GNU General Public License 3.0
+                    GNU Affero General Public License 3.0
                 </div>
             </div>
 
             <div>
                 <h4 class="text-sm font-semibold text-gray-900 dark:text-white mb-2">Last Updated</h4>
-                <span class="text-gray-700 dark:text-gray-300">July 23, 2024</span>
+                <span class="text-gray-700 dark:text-gray-300">July 27, 2025</span>
             </div>
-
 
 
         </div>
@@ -266,150 +260,153 @@
             <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md transition-shadow duration-200">
                 <div class="flex items-start justify-between mb-3">
                     <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                        <a href="/apps/schoco.html" class="hover:text-primary-600 dark:hover:text-primary-400">
-                            Schoco
+                        <a href="/apps/portkey.html" class="hover:text-primary-600 dark:hover:text-primary-400">
+                            portkey
                         </a>
                     </h3>
                     <div class="flex items-center text-yellow-500">
                         <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                         </svg>
-                        <span class="text-sm">27</span>
+                        <span class="text-sm">59</span>
                     </div>
                 </div>
                 
                 <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">
-                    &lt;span class=&#34;description-fade&#34;&gt;Online IDE for learning Java programming at school, including automatic JUnit tests. Designed to&lt;span class=&#34;fade-ellipsis&#34;&gt;...&lt;/span&gt;&lt;/span&gt;
+                    Simple web portal that serves as a startup page, displaying a compilation of links and URLs, while...
                 </p>
                 
                 <div class="flex flex-wrap gap-1">
                     <span class="inline-block bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded">
-                        Learning and Courses
+                        Personal Dashboards
                     </span>
                 </div>
             </div>
             <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md transition-shadow duration-200">
                 <div class="flex items-start justify-between mb-3">
                     <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                        <a href="/apps/inginious.html" class="hover:text-primary-600 dark:hover:text-primary-400">
-                            INGInious
+                        <a href="/apps/fenrus.html" class="hover:text-primary-600 dark:hover:text-primary-400">
+                            Fenrus
                         </a>
                     </h3>
                     <div class="flex items-center text-yellow-500">
                         <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                         </svg>
-                        <span class="text-sm">225</span>
+                        <span class="text-sm">681</span>
                     </div>
                 </div>
                 
                 <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">
-                    Intelligent grader that allows secured and automated testing of code made by students
+                    Personal home page that allows for multiple users, guest access and multiple dashboards for each...
                 </p>
                 
                 <div class="flex flex-wrap gap-1">
                     <span class="inline-block bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded">
-                        Learning and Courses
+                        Personal Dashboards
                     </span>
                 </div>
             </div>
             <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md transition-shadow duration-200">
                 <div class="flex items-start justify-between mb-3">
                     <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                        <a href="/apps/lodestone.html" class="hover:text-primary-600 dark:hover:text-primary-400">
-                            Lodestone
+                        <a href="/apps/mattermost.html" class="hover:text-primary-600 dark:hover:text-primary-400">
+                            Mattermost
                         </a>
                     </h3>
                     <div class="flex items-center text-yellow-500">
                         <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                         </svg>
-                        <span class="text-sm">978</span>
+                        <span class="text-sm">33.3k</span>
                     </div>
                 </div>
                 
                 <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">
-                    Server hosting tool for Minecraft and other multiplayers
+                    Platform for secure collaboration across the entire software development lifecycle, can be...
                 </p>
                 
                 <div class="flex flex-wrap gap-1">
                     <span class="inline-block bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded">
-                        Games - Administrative Utilities &amp; Control Panels
+                        Communication - Custom Communication Systems
                     </span>
                 </div>
             </div>
             <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md transition-shadow duration-200">
                 <div class="flex items-start justify-between mb-3">
                     <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                        <a href="/apps/otter-wiki.html" class="hover:text-primary-600 dark:hover:text-primary-400">
-                            Otter Wiki
+                        <a href="/apps/glance.html" class="hover:text-primary-600 dark:hover:text-primary-400">
+                            Glance
                         </a>
                     </h3>
                     <div class="flex items-center text-yellow-500">
                         <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                         </svg>
-                        <span class="text-sm">958</span>
+                        <span class="text-sm">26.7k</span>
                     </div>
                 </div>
                 
                 <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">
-                    Simple, easy to use wiki software using markdown
+                    Highly customizable dashboard that puts all your feeds in one place
                 </p>
                 
                 <div class="flex flex-wrap gap-1">
                     <span class="inline-block bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded">
-                        Wikis
+                        Personal Dashboards
+                    </span>
+                    <span class="inline-block bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded">
+                        Feed Readers
                     </span>
                 </div>
             </div>
             <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md transition-shadow duration-200">
                 <div class="flex items-start justify-between mb-3">
                     <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                        <a href="/apps/immich-kiosk.html" class="hover:text-primary-600 dark:hover:text-primary-400">
-                            Immich Kiosk
+                        <a href="/apps/linkstack.html" class="hover:text-primary-600 dark:hover:text-primary-400">
+                            LinkStack
                         </a>
                     </h3>
                     <div class="flex items-center text-yellow-500">
                         <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                         </svg>
-                        <span class="text-sm">953</span>
+                        <span class="text-sm">3.0k</span>
                     </div>
                 </div>
                 
                 <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">
-                    Lightweight slideshow for running on kiosk devices and browsers that uses Immich as a data source
+                    Link all your social media platforms easily accessible on one page, customizable through an...
                 </p>
                 
                 <div class="flex flex-wrap gap-1">
                     <span class="inline-block bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded">
-                        Photo Galleries
+                        Personal Dashboards
                     </span>
                 </div>
             </div>
             <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md transition-shadow duration-200">
                 <div class="flex items-start justify-between mb-3">
                     <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                        <a href="/apps/watcharr.html" class="hover:text-primary-600 dark:hover:text-primary-400">
-                            Watcharr
+                        <a href="/apps/daily-stars-explorer.html" class="hover:text-primary-600 dark:hover:text-primary-400">
+                            Daily Stars Explorer
                         </a>
                     </h3>
                     <div class="flex items-center text-yellow-500">
                         <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                         </svg>
-                        <span class="text-sm">950</span>
+                        <span class="text-sm">236</span>
                     </div>
                 </div>
                 
                 <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">
-                    &lt;span class=&#34;description-fade&#34;&gt;Add and track all the shows and movies you are watching. Comes with user authentication, modern and&lt;span class=&#34;fade-ellipsis&#34;&gt;...&lt;/span&gt;&lt;/span&gt;
+                    Track GitHub repo trends with daily star insights to see growth and community interest over time
                 </p>
                 
                 <div class="flex flex-wrap gap-1">
                     <span class="inline-block bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded">
-                        Media Management
+                        Analytics
                     </span>
                 </div>
             </div>
@@ -452,12 +449,14 @@
                     <ul class="space-y-2">
                         <li>
                             <a href="/" 
+                               
                                class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
                                 Home
                             </a>
                         </li>
                         <li>
                             <a href="/statistics.html" 
+                               
                                class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
                                 Statistics
                             </a>
@@ -471,18 +470,21 @@
                     <ul class="space-y-2">
                         <li>
                             <a href="https://github.com/awesome-selfhosted/awesome-selfhosted" 
-target="_blank" rel="noopener"                               class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
+                               
+                               class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
                                 GitHub
                             </a>
                         </li>
                         <li>
                             <a href="https://github.com/awesome-selfhosted/awesome-selfhosted-data" 
-target="_blank" rel="noopener"                               class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
+                               
+                               class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
                                 Data Source
                             </a>
                         </li>
                         <li>
                             <a href="/sitemap.xml" 
+                               
                                class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
                                 Sitemap
                             </a>
@@ -494,11 +496,11 @@ target="_blank" rel="noopener"                               class="text-gray-60
             <div class="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700">
                 <p class="text-center text-sm text-gray-500 dark:text-gray-500">
                     Copyright © 2015-2025, the Awesome Selfhosted community. Data from 
-                    <a href="https://github.com/awesome-selfhosted/awesome-selfhosted-data" target="_blank" rel="noopener" class="text-primary-600 hover:text-primary-500">
+                    <a href="https://github.com/awesome-selfhosted/awesome-selfhosted-data" class="text-primary-600 hover:text-primary-500">
                         awesome-selfhosted-data
                     </a>
                     <br>
-                    <a href="https://github.com/awesome-selfhosted/awesome-selfhosted-data/blob/master/LICENSE" target="_blank" rel="noopener" class="text-primary-600 hover:text-primary-500">
+                    <a href="https://github.com/awesome-selfhosted/awesome-selfhosted-data/blob/master/LICENSE" class="text-primary-600 hover:text-primary-500">
                         Content under CC-BY-SA 3.0 license
                     </a>
                 </p>

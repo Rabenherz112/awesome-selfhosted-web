@@ -14,6 +14,12 @@
     <meta name="open-internal-new-tab" content="False">
     <meta name="browse-description-length" content="250">
     <meta name="browse-description-full" content="False">
+    <meta name="search-min-query-length" content="3">
+    <meta name="search-fuzzy-threshold" content="0.3">
+    <meta name="search-max-results" content="8">
+    <meta name="browse-max-tags-per-card" content="2">
+    <meta name="browse-max-platforms-per-card" content="3">
+    <meta name="lazy-load-images" content="True">
 
     <!-- Open Graph tags -->
     <meta property="og:title" content="phpList - Self-Hosted Application - Awesome Selfhosted">
@@ -27,6 +33,7 @@
     <meta name="twitter:description" content="Discover and explore self-hosted applications">
 
     <!-- Tailwind CSS -->
+    <!--
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -51,6 +58,8 @@
             }
         }
     </script>
+    -->
+    <link rel="stylesheet" href="/static/css/tailwind.css">
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/static/css/custom.css">
@@ -186,7 +195,8 @@
             
             <!-- Action Buttons -->
             <div class="flex space-x-3">
-                
+
+
                 <a href="https://www.phplist.org"
                    class="inline-flex items-center px-4 py-2 bg-primary-600 hover:bg-primary-700 text-white font-medium rounded-lg shadow transition-colors">
                     <svg class="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -244,7 +254,6 @@
             </div>
 
 
-
         </div>
     </div>
 
@@ -283,6 +292,75 @@
             <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md transition-shadow duration-200">
                 <div class="flex items-start justify-between mb-3">
                     <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                        <a href="/apps/pelican-panel.html" class="hover:text-primary-600 dark:hover:text-primary-400">
+                            Pelican Panel
+                        </a>
+                    </h3>
+                    <div class="flex items-center text-yellow-500">
+                        <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <span class="text-sm">1.5k</span>
+                    </div>
+                </div>
+                
+                <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">
+                    Web application for easy management of game servers, offering a user-friendly interface for...
+                </p>
+                
+                <div class="flex flex-wrap gap-1">
+                    <span class="inline-block bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded">
+                        Games - Administrative Utilities &amp; Control Panels
+                    </span>
+                </div>
+            </div>
+            <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md transition-shadow duration-200">
+                <div class="flex items-start justify-between mb-3">
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                        <a href="/apps/django-crm.html" class="hover:text-primary-600 dark:hover:text-primary-400">
+                            Django-CRM
+                        </a>
+                    </h3>
+                    <div class="flex items-center text-yellow-500">
+                        <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <span class="text-sm">333</span>
+                    </div>
+                </div>
+                
+                <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">
+                    Analytical CRM with tasks management, email marketing and many more. Django CRM is built for...
+                </p>
+                
+                <div class="flex flex-wrap gap-1">
+                    <span class="inline-block bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded">
+                        Customer Relationship Management (CRM)
+                    </span>
+                </div>
+            </div>
+            <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md transition-shadow duration-200">
+                <div class="flex items-start justify-between mb-3">
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                        <a href="/apps/cms-made-simple.html" class="hover:text-primary-600 dark:hover:text-primary-400">
+                            CMS Made Simple
+                        </a>
+                    </h3>
+                </div>
+                
+                <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">
+                    Faster and easier management of website contents, scalable for small businesses to large...
+                </p>
+                
+                <div class="flex flex-wrap gap-1">
+                    <span class="inline-block bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded">
+                        Content Management Systems (CMS)
+                    </span>
+                </div>
+            </div>
+            <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md transition-shadow duration-200">
+                <div class="flex items-start justify-between mb-3">
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
                         <a href="/apps/sendy.html" class="hover:text-primary-600 dark:hover:text-primary-400">
                             Sendy
                         </a>
@@ -290,7 +368,7 @@
                 </div>
                 
                 <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">
-                    &lt;span class=&#34;description-fade&#34;&gt;Self-hosted email newsletter application that lets you send bulk emails via Amazon Simple Email&lt;span class=&#34;fade-ellipsis&#34;&gt;...&lt;/span&gt;&lt;/span&gt;
+                    Self-hosted email newsletter application that lets you send bulk emails via Amazon Simple Email...
                 </p>
                 
                 <div class="flex flex-wrap gap-1">
@@ -302,100 +380,25 @@
             <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md transition-shadow duration-200">
                 <div class="flex items-start justify-between mb-3">
                     <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                        <a href="/apps/orangehrm.html" class="hover:text-primary-600 dark:hover:text-primary-400">
-                            OrangeHRM
+                        <a href="/apps/listmonk.html" class="hover:text-primary-600 dark:hover:text-primary-400">
+                            Listmonk
                         </a>
                     </h3>
                     <div class="flex items-center text-yellow-500">
                         <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                         </svg>
-                        <span class="text-sm">942</span>
+                        <span class="text-sm">17.5k</span>
                     </div>
                 </div>
                 
                 <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">
-                    Comprehensive HRM system that captures all the essential functionalities required for any enterprise
+                    High performance, self-hosted newsletter and mailing list manager with a modern dashboard
                 </p>
                 
                 <div class="flex flex-wrap gap-1">
                     <span class="inline-block bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded">
-                        Human Resources Management (HRM)
-                    </span>
-                </div>
-            </div>
-            <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md transition-shadow duration-200">
-                <div class="flex items-start justify-between mb-3">
-                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                        <a href="/apps/fusionpbx.html" class="hover:text-primary-600 dark:hover:text-primary-400">
-                            FusionPBX
-                        </a>
-                    </h3>
-                    <div class="flex items-center text-yellow-500">
-                        <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                        </svg>
-                        <span class="text-sm">886</span>
-                    </div>
-                </div>
-                
-                <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">
-                    Web interface for multi-platform voice switch called FreeSWITCH
-                </p>
-                
-                <div class="flex flex-wrap gap-1">
-                    <span class="inline-block bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded">
-                        Communication - SIP
-                    </span>
-                </div>
-            </div>
-            <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md transition-shadow duration-200">
-                <div class="flex items-start justify-between mb-3">
-                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                        <a href="/apps/pictshare.html" class="hover:text-primary-600 dark:hover:text-primary-400">
-                            PictShare
-                        </a>
-                    </h3>
-                    <div class="flex items-center text-yellow-500">
-                        <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                        </svg>
-                        <span class="text-sm">883</span>
-                    </div>
-                </div>
-                
-                <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">
-                    Multi lingual image hosting service with a simple resizing and upload API
-                </p>
-                
-                <div class="flex flex-wrap gap-1">
-                    <span class="inline-block bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded">
-                        File Transfer - Single-click &amp; Drag-n-drop Upload
-                    </span>
-                </div>
-            </div>
-            <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md transition-shadow duration-200">
-                <div class="flex items-start justify-between mb-3">
-                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                        <a href="/apps/chamilo-lms.html" class="hover:text-primary-600 dark:hover:text-primary-400">
-                            Chamilo LMS
-                        </a>
-                    </h3>
-                    <div class="flex items-center text-yellow-500">
-                        <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                        </svg>
-                        <span class="text-sm">872</span>
-                    </div>
-                </div>
-                
-                <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">
-                    Create a virtual campus for the provision of online or semi-online training
-                </p>
-                
-                <div class="flex flex-wrap gap-1">
-                    <span class="inline-block bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded">
-                        Learning and Courses
+                        Communication - Email - Mailing Lists and Newsletters
                     </span>
                 </div>
             </div>
@@ -438,12 +441,14 @@
                     <ul class="space-y-2">
                         <li>
                             <a href="/" 
+                               
                                class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
                                 Home
                             </a>
                         </li>
                         <li>
                             <a href="/statistics.html" 
+                               
                                class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
                                 Statistics
                             </a>
@@ -457,18 +462,21 @@
                     <ul class="space-y-2">
                         <li>
                             <a href="https://github.com/awesome-selfhosted/awesome-selfhosted" 
-target="_blank" rel="noopener"                               class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
+                               
+                               class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
                                 GitHub
                             </a>
                         </li>
                         <li>
                             <a href="https://github.com/awesome-selfhosted/awesome-selfhosted-data" 
-target="_blank" rel="noopener"                               class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
+                               
+                               class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
                                 Data Source
                             </a>
                         </li>
                         <li>
                             <a href="/sitemap.xml" 
+                               
                                class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
                                 Sitemap
                             </a>
@@ -480,11 +488,11 @@ target="_blank" rel="noopener"                               class="text-gray-60
             <div class="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700">
                 <p class="text-center text-sm text-gray-500 dark:text-gray-500">
                     Copyright © 2015-2025, the Awesome Selfhosted community. Data from 
-                    <a href="https://github.com/awesome-selfhosted/awesome-selfhosted-data" target="_blank" rel="noopener" class="text-primary-600 hover:text-primary-500">
+                    <a href="https://github.com/awesome-selfhosted/awesome-selfhosted-data" class="text-primary-600 hover:text-primary-500">
                         awesome-selfhosted-data
                     </a>
                     <br>
-                    <a href="https://github.com/awesome-selfhosted/awesome-selfhosted-data/blob/master/LICENSE" target="_blank" rel="noopener" class="text-primary-600 hover:text-primary-500">
+                    <a href="https://github.com/awesome-selfhosted/awesome-selfhosted-data/blob/master/LICENSE" class="text-primary-600 hover:text-primary-500">
                         Content under CC-BY-SA 3.0 license
                     </a>
                 </p>
