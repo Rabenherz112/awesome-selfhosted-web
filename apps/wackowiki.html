@@ -33,32 +33,6 @@
     <meta name="twitter:description" content="Discover and explore self-hosted applications">
 
     <!-- Tailwind CSS -->
-    <!--
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        'primary': {
-                            50: '#eff6ff',
-                            100: '#dbeafe', 
-                            200: '#bfdbfe',
-                            300: '#93c5fd',
-                            400: '#60a5fa',
-                            500: '#3b82f6',
-                            600: '#2563eb',
-                            700: '#1d4ed8',
-                            800: '#1e40af',
-                            900: '#1e3a8a'
-                        }
-                    }
-                }
-            }
-        }
-    </script>
-    -->
     <link rel="stylesheet" href="/static/css/tailwind.css">
     
     <!-- Custom CSS -->
@@ -92,7 +66,7 @@
                     
                     <!-- Main Navigation -->
                     <div class="hidden md:ml-10 md:flex md:space-x-8">
-                        <a href="/" class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 px-3 py-2 text-sm font-medium">
+                        <a href="/browse.html" class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 px-3 py-2 text-sm font-medium">
                             Browse
                         </a>
                         <a href="/statistics.html" class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 px-3 py-2 text-sm font-medium">
@@ -244,13 +218,13 @@
                 <h4 class="text-sm font-semibold text-gray-900 dark:text-white mb-2">
                     License                </h4>
                 <div class="text-gray-700 dark:text-gray-300">
-                    BSD 3-Clause &#34;New&#34; or &#34;Revised&#34;
+                                BSD 3-Clause &#34;New&#34; or &#34;Revised&#34;
                 </div>
             </div>
 
             <div>
                 <h4 class="text-sm font-semibold text-gray-900 dark:text-white mb-2">Last Updated</h4>
-                <span class="text-gray-700 dark:text-gray-300">July 31, 2025</span>
+                <span class="text-gray-700 dark:text-gray-300">August 02, 2025</span>
             </div>
 
 
@@ -264,25 +238,6 @@
         <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Related Applications</h2>
         
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md transition-shadow duration-200">
-                <div class="flex items-start justify-between mb-3">
-                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                        <a href="/apps/wikiss.html" class="hover:text-primary-600 dark:hover:text-primary-400">
-                            WiKiss
-                        </a>
-                    </h3>
-                </div>
-                
-                <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">
-                    Wiki, simple to use and install
-                </p>
-                
-                <div class="flex flex-wrap gap-1">
-                    <span class="inline-block bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded">
-                        Wikis
-                    </span>
-                </div>
-            </div>
             <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md transition-shadow duration-200">
                 <div class="flex items-start justify-between mb-3">
                     <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
@@ -408,6 +363,25 @@
                     </span>
                 </div>
             </div>
+            <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md transition-shadow duration-200">
+                <div class="flex items-start justify-between mb-3">
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                        <a href="/apps/mediawiki.html" class="hover:text-primary-600 dark:hover:text-primary-400">
+                            Mediawiki
+                        </a>
+                    </h3>
+                </div>
+                
+                <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">
+                    Wiki software package that powers Wikipedia and all other Wikimedia projects, serving hundreds of...
+                </p>
+                
+                <div class="flex flex-wrap gap-1">
+                    <span class="inline-block bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded">
+                        Wikis
+                    </span>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -453,6 +427,13 @@
                             </a>
                         </li>
                         <li>
+                            <a href="/browse.html" 
+                               
+                               class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
+                                Browse
+                            </a>
+                        </li>
+                        <li>
                             <a href="/statistics.html" 
                                
                                class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
@@ -492,16 +473,12 @@
             </div>
             
             <div class="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700">
-                <p class="text-center text-sm text-gray-500 dark:text-gray-500">
+                <div class="text-center text-sm text-gray-500 dark:text-gray-500">
                     Copyright © 2015-2025, the Awesome Selfhosted community. Data from 
-                    <a href="https://github.com/awesome-selfhosted/awesome-selfhosted-data" class="text-primary-600 hover:text-primary-500">
-                        awesome-selfhosted-data
-                    </a>
-                    <br>
-                    <a href="https://github.com/awesome-selfhosted/awesome-selfhosted-data/blob/master/LICENSE" class="text-primary-600 hover:text-primary-500">
-                        Content under CC-BY-SA 3.0 license
-                    </a>
-                </p>
+<a href="https://github.com/awesome-selfhosted/awesome-selfhosted-data" class="text-primary-600 hover:text-primary-500">awesome-selfhosted-data</a>
+<br>
+<a href="https://github.com/awesome-selfhosted/awesome-selfhosted-data/blob/master/LICENSE" class="text-primary-600     hover:text-primary-500">Content under CC-BY-SA 3.0 license</a>
+                </div>
             </div>
         </div>
     </footer>

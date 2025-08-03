@@ -33,32 +33,6 @@
     <meta name="twitter:description" content="Discover and explore self-hosted applications">
 
     <!-- Tailwind CSS -->
-    <!--
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        'primary': {
-                            50: '#eff6ff',
-                            100: '#dbeafe', 
-                            200: '#bfdbfe',
-                            300: '#93c5fd',
-                            400: '#60a5fa',
-                            500: '#3b82f6',
-                            600: '#2563eb',
-                            700: '#1d4ed8',
-                            800: '#1e40af',
-                            900: '#1e3a8a'
-                        }
-                    }
-                }
-            }
-        }
-    </script>
-    -->
     <link rel="stylesheet" href="/static/css/tailwind.css">
     
     <!-- Custom CSS -->
@@ -92,7 +66,7 @@
                     
                     <!-- Main Navigation -->
                     <div class="hidden md:ml-10 md:flex md:space-x-8">
-                        <a href="/" class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 px-3 py-2 text-sm font-medium">
+                        <a href="/browse.html" class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 px-3 py-2 text-sm font-medium">
                             Browse
                         </a>
                         <a href="/statistics.html" class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 px-3 py-2 text-sm font-medium">
@@ -205,13 +179,6 @@
                 </a>
 
 
-                <a href="https://littlelink.io/"
-                   class="inline-flex items-center px-4 py-2 bg-primary-600 hover:bg-primary-700 text-white font-medium rounded-lg shadow transition-colors">
-                    <svg class="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                    </svg>
-                    Website
-                </a>
                 
                 <a href="https://github.com/sethcottle/littlelink"
                    class="inline-flex items-center px-4 py-2 bg-gray-800 hover:bg-gray-900 dark:bg-gray-700 dark:hover:bg-gray-600 text-white font-medium rounded-lg shadow transition-colors">
@@ -240,6 +207,7 @@
         <div class="mb-6">
             <h3 class="text-sm font-semibold text-gray-900 dark:text-white uppercase tracking-wider mb-3">Additional Information</h3>
             <div class="space-y-2">
+
                 
                 <div class="flex items-start text-sm text-gray-600 dark:text-gray-400">
                     <svg class="w-4 h-4 mr-2 mt-0.5 text-green-500" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
@@ -268,7 +236,7 @@
                 <h4 class="text-sm font-semibold text-gray-900 dark:text-white mb-2">
                     License                </h4>
                 <div class="text-gray-700 dark:text-gray-300">
-                    MIT License
+                                MIT License
                 </div>
             </div>
 
@@ -483,6 +451,13 @@
                             </a>
                         </li>
                         <li>
+                            <a href="/browse.html" 
+                               
+                               class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
+                                Browse
+                            </a>
+                        </li>
+                        <li>
                             <a href="/statistics.html" 
                                
                                class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
@@ -522,16 +497,12 @@
             </div>
             
             <div class="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700">
-                <p class="text-center text-sm text-gray-500 dark:text-gray-500">
+                <div class="text-center text-sm text-gray-500 dark:text-gray-500">
                     Copyright © 2015-2025, the Awesome Selfhosted community. Data from 
-                    <a href="https://github.com/awesome-selfhosted/awesome-selfhosted-data" class="text-primary-600 hover:text-primary-500">
-                        awesome-selfhosted-data
-                    </a>
-                    <br>
-                    <a href="https://github.com/awesome-selfhosted/awesome-selfhosted-data/blob/master/LICENSE" class="text-primary-600 hover:text-primary-500">
-                        Content under CC-BY-SA 3.0 license
-                    </a>
-                </p>
+<a href="https://github.com/awesome-selfhosted/awesome-selfhosted-data" class="text-primary-600 hover:text-primary-500">awesome-selfhosted-data</a>
+<br>
+<a href="https://github.com/awesome-selfhosted/awesome-selfhosted-data/blob/master/LICENSE" class="text-primary-600     hover:text-primary-500">Content under CC-BY-SA 3.0 license</a>
+                </div>
             </div>
         </div>
     </footer>

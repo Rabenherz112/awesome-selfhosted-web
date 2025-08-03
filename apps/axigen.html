@@ -33,32 +33,6 @@
     <meta name="twitter:description" content="Discover and explore self-hosted applications">
 
     <!-- Tailwind CSS -->
-    <!--
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        'primary': {
-                            50: '#eff6ff',
-                            100: '#dbeafe', 
-                            200: '#bfdbfe',
-                            300: '#93c5fd',
-                            400: '#60a5fa',
-                            500: '#3b82f6',
-                            600: '#2563eb',
-                            700: '#1d4ed8',
-                            800: '#1e40af',
-                            900: '#1e3a8a'
-                        }
-                    }
-                }
-            }
-        }
-    </script>
-    -->
     <link rel="stylesheet" href="/static/css/tailwind.css">
     
     <!-- Custom CSS -->
@@ -92,7 +66,7 @@
                     
                     <!-- Main Navigation -->
                     <div class="hidden md:ml-10 md:flex md:space-x-8">
-                        <a href="/" class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 px-3 py-2 text-sm font-medium">
+                        <a href="/browse.html" class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 px-3 py-2 text-sm font-medium">
                             Browse
                         </a>
                         <a href="/statistics.html" class="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 px-3 py-2 text-sm font-medium">
@@ -231,7 +205,7 @@
                 <h4 class="text-sm font-semibold text-gray-900 dark:text-white mb-2">
                     License                </h4>
                 <div class="text-gray-700 dark:text-gray-300">
-                    Proprietary software
+                                <span class="text-orange-700 dark:text-orange-300">Proprietary software</span>
                 </div>
             </div>
 
@@ -263,25 +237,6 @@
                 <div class="flex flex-wrap gap-1">
                     <span class="inline-block bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded">
                         Self-hosting Solutions
-                    </span>
-                </div>
-            </div>
-            <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md transition-shadow duration-200">
-                <div class="flex items-start justify-between mb-3">
-                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                        <a href="/apps/filerun.html" class="hover:text-primary-600 dark:hover:text-primary-400">
-                            FileRun
-                        </a>
-                    </h3>
-                </div>
-                
-                <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">
-                    Complete solution for your files with integration with Google and Office
-                </p>
-                
-                <div class="flex flex-wrap gap-1">
-                    <span class="inline-block bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded">
-                        File Transfer &amp; Synchronization
                     </span>
                 </div>
             </div>
@@ -361,6 +316,25 @@
                     </span>
                 </div>
             </div>
+            <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md transition-shadow duration-200">
+                <div class="flex items-start justify-between mb-3">
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                        <a href="/apps/deskpro.html" class="hover:text-primary-600 dark:hover:text-primary-400">
+                            Deskpro
+                        </a>
+                    </h3>
+                </div>
+                
+                <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">
+                    On-Premise help desk software that includes email, chat, voice &amp; help centre publishing. Full...
+                </p>
+                
+                <div class="flex flex-wrap gap-1">
+                    <span class="inline-block bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded">
+                        Ticketing
+                    </span>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -406,6 +380,13 @@
                             </a>
                         </li>
                         <li>
+                            <a href="/browse.html" 
+                               
+                               class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
+                                Browse
+                            </a>
+                        </li>
+                        <li>
                             <a href="/statistics.html" 
                                
                                class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
@@ -445,16 +426,12 @@
             </div>
             
             <div class="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700">
-                <p class="text-center text-sm text-gray-500 dark:text-gray-500">
+                <div class="text-center text-sm text-gray-500 dark:text-gray-500">
                     Copyright © 2015-2025, the Awesome Selfhosted community. Data from 
-                    <a href="https://github.com/awesome-selfhosted/awesome-selfhosted-data" class="text-primary-600 hover:text-primary-500">
-                        awesome-selfhosted-data
-                    </a>
-                    <br>
-                    <a href="https://github.com/awesome-selfhosted/awesome-selfhosted-data/blob/master/LICENSE" class="text-primary-600 hover:text-primary-500">
-                        Content under CC-BY-SA 3.0 license
-                    </a>
-                </p>
+<a href="https://github.com/awesome-selfhosted/awesome-selfhosted-data" class="text-primary-600 hover:text-primary-500">awesome-selfhosted-data</a>
+<br>
+<a href="https://github.com/awesome-selfhosted/awesome-selfhosted-data/blob/master/LICENSE" class="text-primary-600     hover:text-primary-500">Content under CC-BY-SA 3.0 license</a>
+                </div>
             </div>
         </div>
     </footer>
