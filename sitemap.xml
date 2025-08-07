@@ -1169,6 +1169,10 @@
 <priority>0.7</priority>        <changefreq>weekly</changefreq>
     </url>
     <url>
+        <loc>https://awesome-selfhosted.net/apps/usertour.html</loc>
+<priority>0.7</priority>        <changefreq>weekly</changefreq>
+    </url>
+    <url>
         <loc>https://awesome-selfhosted.net/apps/simplex-chat.html</loc>
 <priority>0.7</priority>        <changefreq>weekly</changefreq>
     </url>
