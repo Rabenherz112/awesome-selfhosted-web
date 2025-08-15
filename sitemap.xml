@@ -1073,10 +1073,6 @@
 <priority>0.7</priority>        <changefreq>weekly</changefreq>
     </url>
     <url>
-        <loc>https://awesome-selfhosted.net/apps/iopaint.html</loc>
-<priority>0.7</priority>        <changefreq>weekly</changefreq>
-    </url>
-    <url>
         <loc>https://awesome-selfhosted.net/apps/go-feature-flag.html</loc>
 <priority>0.7</priority>        <changefreq>weekly</changefreq>
     </url>
