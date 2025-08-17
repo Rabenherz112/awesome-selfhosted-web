@@ -2621,10 +2621,6 @@
 <priority>0.7</priority>        <changefreq>weekly</changefreq>
     </url>
     <url>
-        <loc>https://awesome-selfhosted.net/apps/jsxc.html</loc>
-<priority>0.7</priority>        <changefreq>weekly</changefreq>
-    </url>
-    <url>
         <loc>https://awesome-selfhosted.net/apps/bagisto.html</loc>
 <priority>0.7</priority>        <changefreq>weekly</changefreq>
     </url>
