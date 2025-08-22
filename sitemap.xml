@@ -1385,6 +1385,10 @@
 <priority>0.7</priority>        <changefreq>weekly</changefreq>
     </url>
     <url>
+        <loc>https://awesome-selfhosted.net/apps/ziit.html</loc>
+<priority>0.7</priority>        <changefreq>weekly</changefreq>
+    </url>
+    <url>
         <loc>https://awesome-selfhosted.net/apps/koha.html</loc>
 <priority>0.7</priority>        <changefreq>weekly</changefreq>
     </url>
@@ -4101,6 +4105,10 @@
 <priority>0.7</priority>        <changefreq>weekly</changefreq>
     </url>
     <url>
+        <loc>https://awesome-selfhosted.net/apps/sync-in.html</loc>
+<priority>0.7</priority>        <changefreq>weekly</changefreq>
+    </url>
+    <url>
         <loc>https://awesome-selfhosted.net/apps/caddy.html</loc>
 <priority>0.7</priority>        <changefreq>weekly</changefreq>
     </url>
@@ -4734,6 +4742,10 @@
     </url>
     <url>
         <loc>https://awesome-selfhosted.net/apps/papra.html</loc>
+<priority>0.7</priority>        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>https://awesome-selfhosted.net/apps/drop.html</loc>
 <priority>0.7</priority>        <changefreq>weekly</changefreq>
     </url>
     <url>
