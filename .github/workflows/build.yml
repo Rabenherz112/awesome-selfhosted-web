@@ -50,13 +50,13 @@ jobs:
         run: |
           cd awesome-selfhosted-web-gen/awesome-selfhosted-web
           git remote set-url origin git@github.com:Rabenherz112/awesome-selfhosted-web.git
-          git config user.name "GitHub Actions"
-          git config user.email "<>"
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add .
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "Deploy to GitHub Pages"
+            git commit -m "Push to GitHub"
             git push -f
           fi
 
