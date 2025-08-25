@@ -18,7 +18,7 @@ jobs:
       
       - name: Clone Tool repo
         run: |
-          git clone https://github.com/Rabenherz112/awesome-selfhosted-web-gen.git
+          git clone https://github.com/Rabenherz112/awesome-selfhosted-web-gen.git --branch $ASWG_VERSION
 
       - name: Clone Awesome Selfhosted data repo
         run: |
