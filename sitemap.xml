@@ -2541,10 +2541,6 @@
 <priority>0.7</priority>        <changefreq>weekly</changefreq>
     </url>
     <url>
-        <loc>https://awesome-selfhosted.net/apps/plexripper.html</loc>
-<priority>0.7</priority>        <changefreq>weekly</changefreq>
-    </url>
-    <url>
         <loc>https://awesome-selfhosted.net/apps/reservo.html</loc>
 <priority>0.7</priority>        <changefreq>weekly</changefreq>
     </url>
@@ -2582,6 +2578,10 @@
     </url>
     <url>
         <loc>https://awesome-selfhosted.net/apps/bitpoll.html</loc>
+<priority>0.7</priority>        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>https://awesome-selfhosted.net/apps/reaparr.html</loc>
 <priority>0.7</priority>        <changefreq>weekly</changefreq>
     </url>
     <url>
