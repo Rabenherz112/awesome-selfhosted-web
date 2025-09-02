@@ -3093,10 +3093,6 @@
 <priority>0.7</priority>        <changefreq>weekly</changefreq>
     </url>
     <url>
-        <loc>https://awesome-selfhosted.net/apps/retrospring.html</loc>
-<priority>0.7</priority>        <changefreq>weekly</changefreq>
-    </url>
-    <url>
         <loc>https://awesome-selfhosted.net/apps/radarr.html</loc>
 <priority>0.7</priority>        <changefreq>weekly</changefreq>
     </url>
