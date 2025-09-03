@@ -397,6 +397,10 @@
 <priority>0.7</priority>        <changefreq>weekly</changefreq>
     </url>
     <url>
+        <loc>https://awesome-selfhosted.net/apps/colanode.html</loc>
+<priority>0.7</priority>        <changefreq>weekly</changefreq>
+    </url>
+    <url>
         <loc>https://awesome-selfhosted.net/apps/ghost.html</loc>
 <priority>0.7</priority>        <changefreq>weekly</changefreq>
     </url>
@@ -1209,6 +1213,10 @@
 <priority>0.7</priority>        <changefreq>weekly</changefreq>
     </url>
     <url>
+        <loc>https://awesome-selfhosted.net/apps/medama-analytics.html</loc>
+<priority>0.7</priority>        <changefreq>weekly</changefreq>
+    </url>
+    <url>
         <loc>https://awesome-selfhosted.net/apps/davmail.html</loc>
 <priority>0.7</priority>        <changefreq>weekly</changefreq>
     </url>
@@ -1926,6 +1934,10 @@
     </url>
     <url>
         <loc>https://awesome-selfhosted.net/apps/cloudbeaver.html</loc>
+<priority>0.7</priority>        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>https://awesome-selfhosted.net/apps/wiki-go.html</loc>
 <priority>0.7</priority>        <changefreq>weekly</changefreq>
     </url>
     <url>
@@ -3381,6 +3393,10 @@
 <priority>0.7</priority>        <changefreq>weekly</changefreq>
     </url>
     <url>
+        <loc>https://awesome-selfhosted.net/apps/listaway.html</loc>
+<priority>0.7</priority>        <changefreq>weekly</changefreq>
+    </url>
+    <url>
         <loc>https://awesome-selfhosted.net/apps/panora.html</loc>
 <priority>0.7</priority>        <changefreq>weekly</changefreq>
     </url>
@@ -3662,6 +3678,10 @@
     </url>
     <url>
         <loc>https://awesome-selfhosted.net/apps/digiflashcards.html</loc>
+<priority>0.7</priority>        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>https://awesome-selfhosted.net/apps/tinyfeed.html</loc>
 <priority>0.7</priority>        <changefreq>weekly</changefreq>
     </url>
     <url>
@@ -4069,6 +4089,10 @@
 <priority>0.7</priority>        <changefreq>weekly</changefreq>
     </url>
     <url>
+        <loc>https://awesome-selfhosted.net/apps/cloudreve.html</loc>
+<priority>0.7</priority>        <changefreq>weekly</changefreq>
+    </url>
+    <url>
         <loc>https://awesome-selfhosted.net/apps/pelican-panel.html</loc>
 <priority>0.7</priority>        <changefreq>weekly</changefreq>
     </url>
@@ -4286,10 +4310,6 @@
     </url>
     <url>
         <loc>https://awesome-selfhosted.net/apps/tileserver-gl.html</loc>
-<priority>0.7</priority>        <changefreq>weekly</changefreq>
-    </url>
-    <url>
-        <loc>https://awesome-selfhosted.net/apps/takahē.html</loc>
 <priority>0.7</priority>        <changefreq>weekly</changefreq>
     </url>
     <url>
