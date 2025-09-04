@@ -8,9 +8,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
@@ -34,7 +31,7 @@ jobs:
       - name: Run generator
         run: |
           cd awesome-selfhosted-web-gen
-          python ./generate.py build
+          python ./generate.py build -c ./storage/config.yml
 
       - name: Setup Destination
         run: |
@@ -61,7 +58,7 @@ jobs:
           fi
 
       - name: Push to Website
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
