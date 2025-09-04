@@ -31,7 +31,7 @@ jobs:
       - name: Run generator
         run: |
           cd awesome-selfhosted-web-gen
-          python ./generate.py --config ./storage/config.yml build
+          python ./generate.py --config ./.storage/config.yml build
 
       - name: Setup Destination
         run: |
