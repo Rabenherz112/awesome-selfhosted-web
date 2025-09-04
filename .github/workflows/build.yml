@@ -82,7 +82,7 @@ jobs:
             **/.git*
             **/.git*/**
             **/node_modules/**
-            **.storage/**
+            **/.storage/**
 
       - name: Cleanup
         if: always()
