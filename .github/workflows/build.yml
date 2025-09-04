@@ -7,21 +7,33 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
+      - name: Checkout current repository
+        uses: actions/checkout@v5
+        with:
+          path: awesome-selfhosted-web
+
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v6
         with:
           python-version: '3.13'
-      
+
       - name: Clone Tool repo
         run: |
-          git clone https://github.com/Rabenherz112/awesome-selfhosted-web-gen.git --branch ${{ vars.ASWG_VERSION }}
+          git clone https://github.com/Rabenherz112/awesome-selfhosted-web-gen.git --branch ${{ vars.ASWG_VERSION || 'main' }}
 
       - name: Clone Awesome Selfhosted data repo
         run: |
           cd awesome-selfhosted-web-gen
           git clone https://github.com/awesome-selfhosted/awesome-selfhosted-data.git
-      
+
+      - name: Copy configuration
+        run: |
+          mkdir -p awesome-selfhosted-web-gen/.storage
+          cp awesome-selfhosted-web/.storage/config.yml awesome-selfhosted-web-gen/.storage/config.yml
+
       - name: Install dependencies
         run: |
           cd awesome-selfhosted-web-gen
@@ -31,39 +43,44 @@ jobs:
       - name: Run generator
         run: |
           cd awesome-selfhosted-web-gen
-          python ./generate.py --config ./.storage/config.yml build
+          python ./generate.py --config .storage/config.yml build
 
-      - name: Setup Destination
+      - name: Deploy generated files to repository
         run: |
-          mkdir -p ~/.ssh
-          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          cd awesome-selfhosted-web-gen
-          git clone https://github.com/Rabenherz112/awesome-selfhosted-web.git
-          rm -rf awesome-selfhosted-web/*
-          cp -rf output/* awesome-selfhosted-web/
-
-      - name: Push to GitHub
-        run: |
-          cd awesome-selfhosted-web-gen/awesome-selfhosted-web
-          git remote set-url origin git@github.com:Rabenherz112/awesome-selfhosted-web.git
+          cd awesome-selfhosted-web
+          
+          # Configure git
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add .
-          if git diff --staged --quiet; then
+          
+          # Remove existing files but keep .git, .github, and .storage
+          rm -rf *
+          
+          # Copy generated files
+          cp -rf ../awesome-selfhosted-web-gen/output/* .
+          
+          # Commit and push if there are changes
+          if git diff --quiet && git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "Push to GitHub"
-            git push -f
+            git add -A
+            git commit -m "Automated build: $(date -u +"%Y-%m-%d %H:%M:%S UTC")"
+            git push origin main
           fi
 
-      - name: Push to Website
+      - name: Deploy to website via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: awesome-selfhosted-web-gen/output/
+          local-dir: awesome-selfhosted-web/
           server-dir: /
           protocol: ftps
           port: 21
+          dangerous-clean-slate: true
+
+      - name: Cleanup
+        if: always()
+        run: |
+          rm -rf awesome-selfhosted-web-gen awesome-selfhosted-web

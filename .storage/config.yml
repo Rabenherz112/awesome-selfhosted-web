@@ -6,7 +6,7 @@
 site:
   title: "Awesome Selfhosted"
   description: "Discover and explore selfhosted applications"
-  url: "https://https://awesome-web.theravenhub.com"
+  url: "https://awesome-web.theravenhub.com"
   author: "awesome selfhosted community"
   base_path: "" # Leave empty for root, or set to "/awesome-selfhosted" for subdirectory
 
