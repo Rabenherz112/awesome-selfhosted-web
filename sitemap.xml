@@ -593,10 +593,6 @@
 <priority>0.7</priority>        <changefreq>weekly</changefreq>
     </url>
     <url>
-        <loc>https://awesome-web.theravenhub.com/apps/livestreamdvr.html</loc>
-<priority>0.7</priority>        <changefreq>weekly</changefreq>
-    </url>
-    <url>
         <loc>https://awesome-web.theravenhub.com/apps/active-collab.html</loc>
 <priority>0.7</priority>        <changefreq>weekly</changefreq>
     </url>
@@ -2326,6 +2322,10 @@
     </url>
     <url>
         <loc>https://awesome-web.theravenhub.com/apps/mailman.html</loc>
+<priority>0.7</priority>        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>https://awesome-web.theravenhub.com/apps/uusec-waf.html</loc>
 <priority>0.7</priority>        <changefreq>weekly</changefreq>
     </url>
     <url>
@@ -4462,6 +4462,10 @@
     </url>
     <url>
         <loc>https://awesome-web.theravenhub.com/apps/mumble.html</loc>
+<priority>0.7</priority>        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>https://awesome-web.theravenhub.com/apps/pangolin.html</loc>
 <priority>0.7</priority>        <changefreq>weekly</changefreq>
     </url>
     <url>
