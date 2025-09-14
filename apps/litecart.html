@@ -143,19 +143,19 @@
     <main class="min-h-screen">
 <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
     <!-- Breadcrumb -->
-    <div class="flex items-center text-sm text-gray-600 dark:text-gray-400 mb-8">
+    <div class="flex items-center text-xs sm:text-sm text-gray-600 dark:text-gray-400 mb-4 sm:mb-8 overflow-x-auto whitespace-nowrap">
         <a href="/" class="hover:text-primary-600 dark:hover:text-primary-400">Home</a>
         <span class="mx-2">/</span>
         <a href="/browse.html" class="hover:text-primary-600 dark:hover:text-primary-400">Browse</a>
         <span class="mx-2">/</span>
-        <span>Litecart</span>
+        <span class="truncate">Litecart</span>
     </div>
 
     <!-- App Header -->
-    <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-8 mb-8">
-        <div class="flex items-start justify-between mb-6">
-            <div>
-                <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-2">
+    <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-4 sm:p-8 mb-8">
+        <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-6">
+            <div class="mb-4 sm:mb-0">
+                <h1 class="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-2">
                     Litecart
                 </h1>
                 <div class="flex items-center text-yellow-500 mb-4">
@@ -165,14 +165,14 @@
                     <span class="text-lg font-medium">253 stars</span>
                 </div>
             </div>
-            
-            <!-- Action Buttons -->
-            <div class="flex space-x-3">
+
+            <!-- Action Buttons - Stack on mobile, row on desktop -->
+            <div class="flex flex-col sm:flex-row gap-2 sm:gap-3 w-full sm:w-auto">
 
 
-                
+
                 <a href="https://github.com/shurco/litecart" target="_self"
-                   class="inline-flex items-center px-4 py-2 bg-gray-800 hover:bg-gray-900 dark:bg-gray-700 dark:hover:bg-gray-600 text-white font-medium rounded-lg shadow transition-colors">
+                   class="inline-flex items-center justify-center px-4 py-2 bg-gray-800 hover:bg-gray-900 dark:bg-gray-700 dark:hover:bg-gray-600   text-white font-medium rounded-lg shadow transition-colors text-sm sm:text-base">
                     <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
                         <path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd"/>
                     </svg>
@@ -214,7 +214,7 @@
         </div>
 
         <!-- Metadata -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 pt-6 border-t border-gray-200 dark:border-gray-700">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 pt-6 border-t border-gray-200 dark:border-gray-700">
             <div>
                 <h4 class="text-sm font-semibold text-gray-900 dark:text-white mb-2">
                     Platforms                </h4>
