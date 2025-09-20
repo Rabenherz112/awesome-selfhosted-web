@@ -1249,6 +1249,10 @@
 <priority>0.7</priority>        <changefreq>weekly</changefreq>
     </url>
     <url>
+        <loc>https://awesome-web.theravenhub.com/apps/nirvati.html</loc>
+<priority>0.7</priority>        <changefreq>weekly</changefreq>
+    </url>
+    <url>
         <loc>https://awesome-web.theravenhub.com/apps/cloudlog.html</loc>
 <priority>0.7</priority>        <changefreq>weekly</changefreq>
     </url>
@@ -1842,6 +1846,10 @@
     </url>
     <url>
         <loc>https://awesome-web.theravenhub.com/apps/plane.html</loc>
+<priority>0.7</priority>        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>https://awesome-web.theravenhub.com/apps/vanilla-cookbook.html</loc>
 <priority>0.7</priority>        <changefreq>weekly</changefreq>
     </url>
     <url>
