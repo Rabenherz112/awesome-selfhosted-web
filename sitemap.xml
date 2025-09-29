@@ -173,6 +173,10 @@
 <priority>0.7</priority>        <changefreq>weekly</changefreq>
     </url>
     <url>
+        <loc>https://awesome-web.theravenhub.com/apps/rybbit.html</loc>
+<priority>0.7</priority>        <changefreq>weekly</changefreq>
+    </url>
+    <url>
         <loc>https://awesome-web.theravenhub.com/apps/tracim.html</loc>
 <priority>0.7</priority>        <changefreq>weekly</changefreq>
     </url>
@@ -1834,6 +1838,10 @@
     </url>
     <url>
         <loc>https://awesome-web.theravenhub.com/apps/filegator.html</loc>
+<priority>0.7</priority>        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>https://awesome-web.theravenhub.com/apps/warracker.html</loc>
 <priority>0.7</priority>        <changefreq>weekly</changefreq>
     </url>
     <url>
@@ -4178,6 +4186,10 @@
     </url>
     <url>
         <loc>https://awesome-web.theravenhub.com/apps/easy!appointments.html</loc>
+<priority>0.7</priority>        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>https://awesome-web.theravenhub.com/apps/anubis.html</loc>
 <priority>0.7</priority>        <changefreq>weekly</changefreq>
     </url>
     <url>
