@@ -2897,10 +2897,6 @@
 <priority>0.7</priority>        <changefreq>weekly</changefreq>
     </url>
     <url>
-        <loc>https://awesome-web.theravenhub.com/apps/gophish.html</loc>
-<priority>0.7</priority>        <changefreq>weekly</changefreq>
-    </url>
-    <url>
         <loc>https://awesome-web.theravenhub.com/apps/databag.html</loc>
 <priority>0.7</priority>        <changefreq>weekly</changefreq>
     </url>
