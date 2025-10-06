@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /static/data/
+Disallow: /static/
 
 Sitemap: https://awesome-web.theravenhub.com/sitemap.xml
