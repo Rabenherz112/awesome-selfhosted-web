@@ -4077,6 +4077,10 @@
 <priority>0.7</priority>        <changefreq>weekly</changefreq>
     </url>
     <url>
+        <loc>https://awesome-web.theravenhub.com/apps/genealogy.html</loc>
+<priority>0.7</priority>        <changefreq>weekly</changefreq>
+    </url>
+    <url>
         <loc>https://awesome-web.theravenhub.com/apps/memex.html</loc>
 <priority>0.7</priority>        <changefreq>weekly</changefreq>
     </url>
