@@ -1209,6 +1209,10 @@
 <priority>0.7</priority>        <changefreq>weekly</changefreq>
     </url>
     <url>
+        <loc>https://awesome-web.theravenhub.com/apps/hive-pal.html</loc>
+<priority>0.7</priority>        <changefreq>weekly</changefreq>
+    </url>
+    <url>
         <loc>https://awesome-web.theravenhub.com/apps/litecart.html</loc>
 <priority>0.7</priority>        <changefreq>weekly</changefreq>
     </url>
@@ -3133,6 +3137,10 @@
 <priority>0.7</priority>        <changefreq>weekly</changefreq>
     </url>
     <url>
+        <loc>https://awesome-web.theravenhub.com/apps/gameyfin.html</loc>
+<priority>0.7</priority>        <changefreq>weekly</changefreq>
+    </url>
+    <url>
         <loc>https://awesome-web.theravenhub.com/apps/repoflow.html</loc>
 <priority>0.7</priority>        <changefreq>weekly</changefreq>
     </url>
@@ -3350,6 +3358,10 @@
     </url>
     <url>
         <loc>https://awesome-web.theravenhub.com/apps/heyform.html</loc>
+<priority>0.7</priority>        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>https://awesome-web.theravenhub.com/apps/cookcli.html</loc>
 <priority>0.7</priority>        <changefreq>weekly</changefreq>
     </url>
     <url>
