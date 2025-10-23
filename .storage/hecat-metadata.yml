@@ -6,7 +6,7 @@ steps:
   - name: Update GitHub metadata for all software projects
     module: processors/github_metadata
     module_options:
-      data_directory: awesome-selfhosted-data/software
+      source_directory: awesome-selfhosted-data/software
       gh_metadata_only_missing: False
       commit_history_fetch_months: 12
       commit_history_clean_months: 12
