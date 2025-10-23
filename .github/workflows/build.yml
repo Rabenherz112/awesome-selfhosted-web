@@ -20,43 +20,34 @@ jobs:
         with:
           python-version: '3.13'
 
-      - name: Clone Tool repo
+      - name: Setup repositories
         run: |
+          # Clone generator tool
           git clone https://github.com/Rabenherz112/awesome-selfhosted-web-gen.git --branch ${{ vars.ASWG_VERSION || 'main' }}
-
-      - name: Clone Awesome Selfhosted data repo
-        run: |
+          
+          # Clone data repository
           cd awesome-selfhosted-web-gen
           git clone https://github.com/awesome-selfhosted/awesome-selfhosted-data.git
+          
+          # Copy configuration
+          mkdir -p .storage
+          cp ../awesome-selfhosted-web/.storage/config.yml .storage/config.yml
 
-      - name: Install custom hecat and enrich GitHub metadata
+      - name: Install and run custom hecat to enrich GitHub metadata
+        continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          # Install custom hecat version from feat-commit-history-v2 branch
-          python -m pip install --force-reinstall git+https://github.com/Rabenherz112/hecat.git@feat-commit-history-v2
-          
-          # Copy hecat configuration
-          cp awesome-selfhosted-web/.storage/hecat-metadata.yml awesome-selfhosted-web-gen/hecat-metadata.yml
-          
-          # Run hecat to enrich GitHub metadata
           cd awesome-selfhosted-web-gen
+          python -m pip install --force-reinstall git+https://github.com/Rabenherz112/hecat.git@feat-commit-history-v2
+          cp ../awesome-selfhosted-web/.storage/hecat-metadata.yml hecat-metadata.yml
           hecat --config hecat-metadata.yml
 
-      - name: Copy configuration
-        run: |
-          mkdir -p awesome-selfhosted-web-gen/.storage
-          cp awesome-selfhosted-web/.storage/config.yml awesome-selfhosted-web-gen/.storage/config.yml
-
-      - name: Install dependencies
+      - name: Build website
         run: |
           cd awesome-selfhosted-web-gen
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-
-      - name: Run generator
-        run: |
-          cd awesome-selfhosted-web-gen
           python ./generate.py --config .storage/config.yml build
 
       - name: Deploy generated files to repository

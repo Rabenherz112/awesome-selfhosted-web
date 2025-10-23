@@ -8,5 +8,8 @@ steps:
     module_options:
       source_directory: awesome-selfhosted-data
       gh_metadata_only_missing: False
-      commit_history_fetch_months: 12
-      commit_history_clean_months: 12
+      gh_commit_history_fetch_months: 12
+      gh_commit_history_clean_months: 12
+      sleep_time: 60
+      batch_size: 30
+      max_retries: 3
