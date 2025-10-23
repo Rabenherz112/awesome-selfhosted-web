@@ -517,10 +517,6 @@
 <lastmod>2025-10-23</lastmod><priority>0.1</priority>        <changefreq>weekly</changefreq>
     </url>
     <url>
-        <loc>https://awesome-web.theravenhub.com/apps/chaskiq.html</loc>
-<lastmod>2025-10-23</lastmod><priority>0.1</priority>        <changefreq>weekly</changefreq>
-    </url>
-    <url>
         <loc>https://awesome-web.theravenhub.com/apps/nymphcast.html</loc>
 <lastmod>2025-10-23</lastmod><priority>0.1</priority>        <changefreq>weekly</changefreq>
     </url>
@@ -1250,6 +1246,10 @@
     </url>
     <url>
         <loc>https://awesome-web.theravenhub.com/apps/synapse.html</loc>
+<lastmod>2025-10-23</lastmod><priority>0.1</priority>        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>https://awesome-web.theravenhub.com/apps/many-notes.html</loc>
 <lastmod>2025-10-23</lastmod><priority>0.1</priority>        <changefreq>weekly</changefreq>
     </url>
     <url>
