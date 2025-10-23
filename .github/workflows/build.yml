@@ -29,6 +29,20 @@ jobs:
           cd awesome-selfhosted-web-gen
           git clone https://github.com/awesome-selfhosted/awesome-selfhosted-data.git
 
+      - name: Install custom hecat and enrich GitHub metadata
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Install custom hecat version from feat-commit-history-v2 branch
+          python -m pip install --force-reinstall git+https://github.com/Rabenherz112/hecat.git@feat-commit-history-v2
+          
+          # Copy hecat configuration
+          cp awesome-selfhosted-web/.storage/hecat-metadata.yml awesome-selfhosted-web-gen/hecat-metadata.yml
+          
+          # Run hecat to enrich GitHub metadata
+          cd awesome-selfhosted-web-gen
+          hecat --config hecat-metadata.yml
+
       - name: Copy configuration
         run: |
           mkdir -p awesome-selfhosted-web-gen/.storage
