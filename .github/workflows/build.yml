@@ -33,16 +33,6 @@ jobs:
           mkdir -p .storage
           cp ../awesome-selfhosted-web/.storage/config.yml .storage/config.yml
 
-      - name: Install and run custom hecat to enrich GitHub metadata
-        continue-on-error: true
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          cd awesome-selfhosted-web-gen
-          python -m pip install --force-reinstall git+https://github.com/Rabenherz112/hecat.git@feat-commit-history-v2
-          cp ../awesome-selfhosted-web/.storage/hecat-metadata.yml hecat-metadata.yml
-          hecat --config hecat-metadata.yml
-
       - name: Build website
         run: |
           cd awesome-selfhosted-web-gen
