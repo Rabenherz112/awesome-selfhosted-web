@@ -22,23 +22,21 @@ jobs:
 
       - name: Setup repositories
         run: |
-          # Clone generator tool
-          git clone https://github.com/Rabenherz112/awesome-selfhosted-web-gen.git --branch ${{ vars.ASWG_VERSION || 'main' }}
-          
           # Clone data repository
-          cd awesome-selfhosted-web-gen
           git clone https://github.com/awesome-selfhosted/awesome-selfhosted-data.git
           
           # Copy configuration
           mkdir -p .storage
-          cp ../awesome-selfhosted-web/.storage/config.yml .storage/config.yml
+          cp awesome-selfhosted-web/.storage/config.yml .storage/config.yml
+
+      - name: Install awesome-selfhosted-web-gen
+        run: |
+          python -m pip install --upgrade pip
+          pip install git+https://github.com/Rabenherz112/awesome-selfhosted-web-gen.git@${{ vars.ASWG_VERSION || 'main' }}
 
       - name: Build website
         run: |
-          cd awesome-selfhosted-web-gen
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-          python ./generate.py --config .storage/config.yml build
+          aswg --config .storage/config.yml build
 
       - name: Deploy generated files to repository
         run: |
@@ -52,7 +50,7 @@ jobs:
           rm -rf *
           
           # Copy generated files
-          cp -rf ../awesome-selfhosted-web-gen/output/* .
+          cp -rf ../output/* .
           
           # Commit and push if there are changes
           if git diff --quiet && git diff --staged --quiet; then
@@ -82,4 +80,4 @@ jobs:
       - name: Cleanup
         if: always()
         run: |
-          rm -rf awesome-selfhosted-web-gen awesome-selfhosted-web
+          rm -rf awesome-selfhosted-web awesome-selfhosted-data output .storage

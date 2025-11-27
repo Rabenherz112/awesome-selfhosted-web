@@ -33,7 +33,7 @@ build:
 generation:
   items_per_page: 60
   enable_search_index: true
-  minify_html: false
+  minify_html: true
   generate_sitemap: true
   enable_pagination: true
   use_git_data: true
@@ -160,7 +160,7 @@ footer:
   tagline: "{{ site.description }}"
   credit_text: "Built with ❤️ for the self-hosting community"
   footer_text: |
-    Copyright © 2015-2025, the {{ site.author }}. Data from 
+    Copyright © 2015-{{ current_year }}, the {{ site.author }}. Data from 
     <a href="https://github.com/awesome-selfhosted/awesome-selfhosted-data" class="text-primary-600 hover:text-primary-500">awesome-selfhosted-data</a>
     <br>
     <a href="https://github.com/awesome-selfhosted/awesome-selfhosted-data/blob/master/LICENSE" class="text-primary-600     hover:text-primary-500">Content under CC-BY-SA 3.0 license</a>
@@ -183,8 +183,8 @@ footer:
     resources:
       title: "Resources"
       links:
-        - title: "GitHub"
-          url: "https://github.com/awesome-selfhosted/awesome-selfhosted"
+        - title: "Website Source"
+          url: "https://github.com/Rabenherz112/awesome-selfhosted-web"
           external: true
         - title: "Data Source"
           url: "https://github.com/awesome-selfhosted/awesome-selfhosted-data"
@@ -295,3 +295,11 @@ robots:
   disallow:
     - "/static/"
   sitemap_url: "/sitemap.xml"
+
+# =============================================================================
+# HTACCESS CONFIGURATION
+# =============================================================================
+# Important: .htaccess files are only supported by Apache Servers, if you are using a different web server, this will be ignored.
+htaccess:
+  generate: true  # Set to true to generate .htaccess file
+  remove_html_extension: true  # Remove .html extension from URLs
