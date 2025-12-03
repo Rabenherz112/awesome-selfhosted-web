@@ -31,7 +31,7 @@ build:
   data_cache_dir: "data"
 
 generation:
-  items_per_page: 60
+  items_per_page: 24
   enable_search_index: true
   minify_html: true
   generate_sitemap: true
