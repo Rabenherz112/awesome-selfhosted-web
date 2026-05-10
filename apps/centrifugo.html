@@ -11,8 +11,8 @@
     <meta name="items-per-page" content="24">
     <meta name="enable-pagination" content="True">
     <meta name="let-user-choose-pagination-size" content="True">
-    <meta name="open-external-new-tab" content="False">
-    <meta name="open-internal-new-tab" content="False">
+    <meta name="open-external-new-tab" content="false">
+    <meta name="open-internal-new-tab" content="false">
     <meta name="browse-description-length" content="90">
     <meta name="browse-description-full" content="False">
     <meta name="search-min-query-length" content="3">
@@ -23,6 +23,8 @@
     <meta name="lazy-load-images" content="True">
     <meta name="show-project-icons" content="False">
     <meta name="base-path" content="">
+    <meta name="roadmap-enabled" content="False">
+    <meta name="roadmap-removed-catalog-alerts" content="true">
 
     <!-- Open Graph tags -->
     <meta property="og:title" content="Centrifugo - Applications - Awesome Selfhosted">
@@ -147,7 +149,7 @@
 
     <!-- Main Content -->
     <main class="min-h-screen">
-<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8" data-app-id="centrifugo">
     <!-- Breadcrumb -->
     <div class="flex items-center text-xs sm:text-sm text-text-muted mb-4 sm:mb-6 overflow-x-auto whitespace-nowrap">
         <a href="/" class="hover:text-link transition-colors">Home</a>
@@ -206,6 +208,11 @@
             </a>
         </div>
 
+        <div id="roadmap-detail-controls" class="mb-5 hidden">
+            <h3 class="text-xs font-semibold text-text uppercase tracking-wider mb-2">My Roadmap</h3>
+            <div id="roadmap-detail-controls-content"></div>
+        </div>
+
         <!-- Description -->
         <div class="mb-5">
             <p class="text-base text-text-muted leading-relaxed">Language-agnostic real-time messaging (Websocket or SockJS) server</p>
@@ -241,15 +248,15 @@
 
             <div class="flex-1 min-w-[140px] rounded-lg px-3 pt-3 pb-1">
                 <h4 class="text-xs font-semibold text-text mb-1.5 uppercase tracking-wider">Last Updated</h4>
-                <span class="text-sm text-text-muted">April 23, 2026</span>
+                <span class="text-sm text-text-muted">May 09, 2026</span>
             </div>
 
             <div class="flex-1 min-w-[140px] rounded-lg px-3 pt-3 pb-1">
                 <h4 class="text-xs font-semibold text-text mb-1.5 uppercase tracking-wider">Current Release</h4>
                 <div class="text-sm text-text-muted">
-                    <span class="font-medium">v6.7.1</span>
+                    <span class="font-medium">v6.7.2</span>
                     <div class="text-xs text-text-muted mt-0.5">
-                        Released April 23, 2026
+                        Released May 09, 2026
                     </div>
                 </div>
             </div>
@@ -259,7 +266,7 @@
     <!-- Commit Activity -->
     <div class="bg-surface rounded-lg border border-border shadow-sm p-4 sm:p-8 mb-6">
         <h2 class="text-xl font-bold text-text mb-2 sm:mb-4">Commit Activity</h2>
-        <div id="commit-activity-graph" class="w-full min-h-[200px] sm:min-h-[250px]" data-commit-history='{"2025-06": 5, "2025-07": 15, "2025-08": 12, "2025-09": 7, "2025-10": 12, "2025-11": 8, "2025-12": 9, "2026-01": 1, "2026-02": 10, "2026-03": 8, "2026-04": 3, "2026-05": 0}'>
+        <div id="commit-activity-graph" class="w-full min-h-[200px] sm:min-h-[250px]" data-commit-history='{"2025-06": 5, "2025-07": 15, "2025-08": 12, "2025-09": 7, "2025-10": 12, "2025-11": 8, "2025-12": 9, "2026-01": 1, "2026-02": 10, "2026-03": 8, "2026-04": 3, "2026-05": 1}'>
             <div class="flex items-center justify-center h-32 text-text-muted">
                 <div class="text-center">
                     <svg class="animate-spin h-8 w-8 mx-auto mb-2" viewBox="0 0 24 24">
@@ -526,7 +533,6 @@
     <script src="/static/js/theme.js"></script>
     <script src="/static/js/search.js"></script>
     <script src="/static/js/app.js"></script>
-
 <script src="/static/js/app-detail.js"></script>
 </body>
 </html>
