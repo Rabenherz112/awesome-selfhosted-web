@@ -58,7 +58,7 @@ ui:
       url: "https://github.com/awesome-selfhosted/awesome-selfhosted/releases" # this can also be "/browse.html" if external is set to false
       external: true
 
-  show_project_icons: false
+  show_project_icons: true
 
   # Content limits for different sections
   limits:
